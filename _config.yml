@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Profesionnal ID"
+title                    : "Profesionnal Card ID"
 title_separator          : "-"
 name                     : "Emmanuel KONAN"
 description              : &description "personal description"
