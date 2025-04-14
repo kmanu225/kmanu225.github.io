@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Emmanuel KONAN"
   pronouns         : # "he/his"
-  bio              : "I'm an open-minded enthusiast of Mathematics and Computer Science. Feel free to reach out to discuss these topics. I'm always up for a good conversation!"
+  bio              : "The biggest failure is not to try. — Me"
   location         : "France"
   employer         : "Ornisec"
   uri              : "https://kem.gitbook.io/"
@@ -47,7 +47,7 @@ author:
   dribbble         : # Username
   github           : "kmanu225"
   kaggle           : # Username
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   bluesky          : # Replace this with you Bluesky username
