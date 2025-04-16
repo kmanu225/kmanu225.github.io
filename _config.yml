@@ -27,8 +27,8 @@ author:
   pronouns         : # "he/his"
   bio              : "The biggest failure is not to try. — Me"
   location         : "France"
-  employer         : "Ornisec"
-  uri              : "https://kem.gitbook.io/"
+  employer         : # "Organization"
+  uri              : "https://kmanu225.gitbook.io/cs/"
   email            : "emmanuel.konan.edu@gmail.com"
 
   # Academic websites
