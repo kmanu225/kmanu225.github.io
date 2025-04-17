@@ -17,6 +17,7 @@ Education
 
 Work experience
 ======
+
 * **2024–Present**: [Ornisec](https://www.ornisec.com/)
   * Mandated ICS cybersecurity consultant at [Enedis](https://www.enedis.fr/)
   * Penetration testing
@@ -32,8 +33,13 @@ Work experience
   * Data Analysis
   * Programming: Python, SQL, Excel-VBA, Power Query, Power Automate, Power BI
 
+* **2021–2023**: [Superprof](https://www.superprof.fr/)
+  * Private maths teacher for students from sophomore to bachelor level.
+
+
 Certifications
 ======
+
 * **[EJPT](https://certs.ine.com/1fb25060-80dd-4161-8e13-f96b4d74f7c4#acc.KumnvyhU) (2025)**: Entry-level Penetration testers that validates that the individual has the knowledge, skills, and abilities required to fulfill a role as a junior penetration tester.
 
 <!-- Skills
