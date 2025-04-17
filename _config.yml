@@ -158,6 +158,10 @@ include:
   - _pages
   - files
 exclude:
+  - _talks/
+  - _publications/
+  - _teaching/
+  - _portfolio/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
