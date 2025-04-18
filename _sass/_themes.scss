@@ -14,20 +14,20 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* System typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$serif                      : "EB Garamond", "Georgia", "Times New Roman", serif;
+$sans-serif                 : "IBM Plex Serif", "EB Garamond", serif;
+$monospace                  : "Courier Prime", Monaco, Consolas, "Lucida Console", monospace;
 
 /* Sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+$sans-serif-narrow          : "IBM Plex Sans", $sans-serif;
+$helvetica                  : "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /* Serif typefaces */
-$georgia                    : Georgia, serif;
-$times                      : Times, serif;
+$georgia                    : "EB Garamond", Georgia, serif;
+$times                      : "Times New Roman", Times, serif;
 $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
-$garamond                   : Garamond, serif;
+$garamond                   : "Garamond", serif;
 
 /* Type scale */
 $type-size-1                : 2.441em;  // ~39.056px
@@ -39,9 +39,11 @@ $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+/* Font family settings */
+$global-font-family         : $sans-serif; // For body text, keeping modern sans-serif
+$header-font-family         : $sans-serif  ; // For headers
+$caption-font-family        : "IM Fell English", $serif; // For captions and smaller text
+
 
 /* ==========================================================================
    Breakpoints
