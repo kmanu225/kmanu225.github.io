@@ -1,54 +1,40 @@
 /* ==========================================================================
-   DARK THEME
+   DARK THEME (Chalkboard Style)
    ========================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+/* Chalkboard color palette */
+$chalkboard-green           : #2b3e2f;
+$chalk-white                : #f0f0e8;
+$chalk-yellow               : #ffd24c;
+$chalk-orange               : #ffae42;
+$chalk-blue                 : #6fa3ef;
+$chalk-gray                 : #9ba1a6;
+$chalk-border               : lighten($chalkboard-green, 15%);
+$chalk-border-dark          : darken($chalkboard-green, 20%);
+$chalk-caption              : lighten($chalk-white, 20%);
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+/* Replace default gray shades with chalkboard theme colors */
+$gray                       : $chalk-gray;
+$dark-gray                  : #e0e0e0;
+$darker-gray                : #c8c8c8;
+$light-gray                 : lighten($chalk-gray, 10%);
 
-/* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-
-/* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
-$masthead-height            : 70px;
-$navicon-width              : 28px;
-$navicon-height             : 4px;
-$sidebar-link-max-width     : 250px;
-$sidebar-screen-min-width   : 1024px;
-
-/* Dark theme for the site */
+/* Dark theme becomes chalkboard */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$dark-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
+    --global-base-color                 : #{$chalk-white};
+    --global-bg-color                   : #{$chalkboard-green};
+    --global-footer-bg-color            : darken($chalkboard-green, 5%);
+    --global-border-color               : #{$chalk-border};
+    --global-dark-border-color          : #{$chalk-border-dark};
+    --global-code-background-color      : darken($chalkboard-green, 5%);
+    --global-code-text-color            : #{$chalk-white};
+    --global-fig-caption-color          : #{$chalk-caption};
+    --global-link-color                 : #{$chalk-yellow};
+    --global-link-color-hover           : lighten($chalk-yellow, 10%);
+    --global-link-color-visited         : #{$chalk-orange};
+    --global-masthead-link-color        : #{$chalk-white};
+    --global-masthead-link-color-hover  : #{$chalk-yellow};
+    --global-text-color                 : #{$chalk-white};
     --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
+    --global-thead-color                : lighten($chalkboard-green, 10%);
 }
