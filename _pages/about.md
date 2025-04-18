@@ -16,6 +16,3 @@ That spark pushed me to shift focus from pure mathematics to computer science, d
 Thanks to my scientific background, versatility, and commitment to excellence, I've been able to contribute to a variety of projects — from personal experiments to helping friends, relatives, and professional work.
 
 This website is my way of showcasing all that I’ve built and continue to build. Welcome to my world.
-
-------
-This personal website was inspired by an open-source project. Check it out on [GitHub](https://academicpages.github.io/markdown/).
