@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -75,4 +75,4 @@ Service and leadership
 * [DJC](https://www.linkedin.com/company/diaspora-junior-consulting-djc/) – Association encouraging African diaspora to contribute their expertise to the continent.
 * [MANIA](https://www.linkedin.com/showcase/maison-africaine-du-num%C3%A9rique-et-de-l-intelligence-artificielle-mania/) – Promoting digital and AI education in Africa.
 * **IvoireTeK** – Community for Ivorian professionals in computer science living in France.
-* [Re2o](https://rezo-rm.fr/) (2021–2024) – Network operators association for CentraleSupélec campuses in Rennes and Metz.
+* [Re2o](https://rezo-rm.fr/) (2021–2024) – Network operators association for CentraleSupélec campuses in Rennes and Metz. -->
