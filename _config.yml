@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Personal Website"
+title                    : "EKO - Home"
 title_separator          : "-"
 name                     : &name "Emmanuel KONAN"
 description              : &description "personal description"
