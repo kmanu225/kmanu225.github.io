@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+site_theme               : "hacker"
 title                    : "EKO - Home"
 title_separator          : "-"
 name                     : &name "Emmanuel KONAN"
