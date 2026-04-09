@@ -1,0 +1,212 @@
+/* ==========================================================================
+   HACKER THEME (Matrix/Cyberpunk Style)
+   ========================================================================== */
+
+/* Import digital clock-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap');
+
+/* Matrix/Hacker color palette - DEFINE FIRST */
+$matrix-black               : #0a0a0a;
+$matrix-dark                : #0d1117;
+$matrix-gray                : #161b22;
+$matrix-light-gray          : #21262d;
+$matrix-green               : #00ff41;
+$matrix-green-dim           : #00cc33;
+$matrix-green-bright        : #39ff14;
+$matrix-cyan                : #00ffff;
+$matrix-yellow              : #ffee00;
+$matrix-red                 : #ff3333;
+$matrix-orange              : #ff9500;
+$matrix-text                : #e6edf3;
+$matrix-text-muted          : #7d8590;
+$matrix-border              : #30363d;
+$matrix-border-light        : #21262d;
+
+/* Required global variables for notices/buttons/forms */
+$danger-color               : $matrix-red;
+$info-color                 : $matrix-cyan;
+$notice-color               : $matrix-text-muted;
+$success-color              : $matrix-green;
+$warning-color              : $matrix-yellow;
+
+/* Gray scale for compatibility */
+$gray                       : $matrix-text-muted;
+$dark-gray                  : $matrix-text;
+$darker-gray                : $matrix-border;
+$light-gray                 : lighten($matrix-text-muted, 10%);
+$lighter-gray               : $matrix-light-gray;
+
+/* Other required variables */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Hacker theme - Matrix green on black */
+html[data-theme="hacker"] {
+    --global-base-color                 : #{$matrix-text-muted};
+    --global-bg-color                   : #{$matrix-black};
+    --global-footer-bg-color            : #{$matrix-dark};
+    --global-border-color               : #{$matrix-border};
+    --global-dark-border-color          : #{$matrix-border-light};
+    --global-code-background-color      : #{$matrix-gray};
+    --global-code-text-color            : #{$matrix-green};
+    --global-fig-caption-color          : #{$matrix-text-muted};
+    --global-link-color                 : #{$matrix-green};
+    --global-link-color-hover           : #{$matrix-green-bright};
+    --global-link-color-visited         : #{$matrix-green-dim};
+    --global-masthead-link-color        : #{$matrix-text};
+    --global-masthead-link-color-hover  : #{$matrix-green};
+    --global-text-color                 : #{$matrix-text};
+    --global-text-color-light           : #{$matrix-text-muted};
+    --global-thead-color                : #{$matrix-light-gray};
+}
+
+/* Override fonts for hacker theme - digital clock style */
+html[data-theme="hacker"] {
+    --global-font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    --header-font-family: "Orbitron", "Share Tech Mono", "JetBrains Mono", sans-serif;
+}
+
+/* Body and paragraph font override */
+html[data-theme="hacker"] body {
+    font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+}
+
+html[data-theme="hacker"] p,
+html[data-theme="hacker"] li,
+html[data-theme="hacker"] span,
+html[data-theme="hacker"] div {
+    font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+}
+
+/* Digital clock styling for headers - 24-style */
+html[data-theme="hacker"] h1,
+html[data-theme="hacker"] h2,
+html[data-theme="hacker"] h3,
+html[data-theme="hacker"] h4,
+html[data-theme="hacker"] h5,
+html[data-theme="hacker"] h6 {
+    font-family: "Orbitron", "Share Tech Mono", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Glowing link effect for hacker theme */
+html[data-theme="hacker"] a {
+    text-shadow: 0 0 5px rgba($matrix-green, 0.3);
+    transition: all 0.3s ease;
+}
+
+html[data-theme="hacker"] a:hover {
+    text-shadow: 0 0 10px rgba($matrix-green-bright, 0.6), 0 0 20px rgba($matrix-green-bright, 0.4);
+}
+
+/* Code blocks styling */
+html[data-theme="hacker"] pre,
+html[data-theme="hacker"] code {
+    background-color: #{$matrix-gray};
+    border: 1px solid #{$matrix-border};
+    border-radius: 4px;
+}
+
+html[data-theme="hacker"] pre {
+    border-left: 3px solid #{$matrix-green};
+}
+
+/* Selection styling - matrix green */
+html[data-theme="hacker"] ::selection {
+    background-color: rgba($matrix-green, 0.3);
+    color: #{$matrix-text};
+}
+
+/* Scrollbar styling for webkit browsers */
+html[data-theme="hacker"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html[data-theme="hacker"] ::-webkit-scrollbar-track {
+    background: #{$matrix-dark};
+}
+
+html[data-theme="hacker"] ::-webkit-scrollbar-thumb {
+    background: #{$matrix-border};
+    border-radius: 5px;
+}
+
+html[data-theme="hacker"] ::-webkit-scrollbar-thumb:hover {
+    background: #{$matrix-green-dim};
+}
+
+/* Terminal-style notices */
+html[data-theme="hacker"] .notice {
+    border-left: 4px solid #{$matrix-green};
+    background-color: rgba($matrix-green, 0.05);
+}
+
+html[data-theme="hacker"] .notice--info {
+    border-left-color: #{$matrix-cyan};
+    background-color: rgba($matrix-cyan, 0.05);
+}
+
+html[data-theme="hacker"] .notice--warning {
+    border-left-color: #{$matrix-yellow};
+    background-color: rgba($matrix-yellow, 0.05);
+}
+
+html[data-theme="hacker"] .notice--danger {
+    border-left-color: #{$matrix-red};
+    background-color: rgba($matrix-red, 0.05);
+}
+
+/* Buttons */
+html[data-theme="hacker"] .btn {
+    background-color: #{$matrix-gray};
+    border: 1px solid #{$matrix-border};
+    color: #{$matrix-text};
+    font-family: "Orbitron", "Share Tech Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+html[data-theme="hacker"] .btn:hover {
+    background-color: #{$matrix-light-gray};
+    border-color: #{$matrix-green};
+    color: #{$matrix-green};
+    box-shadow: 0 0 10px rgba($matrix-green, 0.3);
+}
+
+html[data-theme="hacker"] .btn--primary {
+    background-color: #{$matrix-green};
+    color: #{$matrix-black};
+}
+
+html[data-theme="hacker"] .btn--primary:hover {
+    background-color: #{$matrix-green-bright};
+    box-shadow: 0 0 15px rgba($matrix-green-bright, 0.5);
+}
+
+/* Digital countdown style for dates/numbers - like "24" clock */
+html[data-theme="hacker"] time,
+html[data-theme="hacker"] .date {
+    font-family: "Orbitron", "Share Tech Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #{$matrix-green};
+    text-shadow: 0 0 5px rgba($matrix-green, 0.5);
+}
+
+/* Site title - digital clock style */
+html[data-theme="hacker"] .site-title {
+    font-family: "Orbitron", "Share Tech Mono", sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

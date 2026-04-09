@@ -1,0 +1,216 @@
+/* ==========================================================================
+   HACKER LIGHT THEME (White/Light version with digital aesthetics)
+   ========================================================================== */
+
+/* Import digital clock-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap');
+
+/* Light Hacker color palette */
+$hacker-white               : #ffffff;
+$hacker-bg                  : #f8f9fa;
+$hacker-gray-light          : #e9ecef;
+$hacker-gray                : #dee2e6;
+$hacker-gray-dark           : #adb5bd;
+$hacker-text-muted          : #6c757d;
+$hacker-text                : #212529;
+$hacker-text-dark           : #000000;
+$hacker-green               : #198754;
+$hacker-green-bright        : #20c997;
+$hacker-green-dim           : #146c43;
+$hacker-cyan                : #0dcaf0;
+$hacker-blue                : #0d6efd;
+$hacker-yellow              : #ffc107;
+$hacker-red                 : #dc3545;
+$hacker-orange              : #fd7e14;
+$hacker-border              : #dee2e6;
+$hacker-border-dark         : #adb5bd;
+
+/* Required global variables for notices/buttons/forms */
+$danger-color               : $hacker-red;
+$info-color                 : $hacker-cyan;
+$notice-color               : $hacker-text-muted;
+$success-color              : $hacker-green;
+$warning-color              : $hacker-yellow;
+
+/* Gray scale for compatibility */
+$gray                       : $hacker-text-muted;
+$dark-gray                  : $hacker-text;
+$darker-gray                : $hacker-border-dark;
+$light-gray                 : lighten($hacker-text-muted, 10%);
+$lighter-gray               : $hacker-gray;
+
+/* Other required variables */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Hacker light theme - Dark text on light background */
+html[data-theme="hacker-light"] {
+    --global-base-color                 : #{$hacker-text-muted};
+    --global-bg-color                   : #{$hacker-white};
+    --global-footer-bg-color            : #{$hacker-bg};
+    --global-border-color               : #{$hacker-border};
+    --global-dark-border-color          : #{$hacker-border-dark};
+    --global-code-background-color      : #{$hacker-gray-light};
+    --global-code-text-color            : #{$hacker-green};
+    --global-fig-caption-color          : #{$hacker-text-muted};
+    --global-link-color                 : #{$hacker-green};
+    --global-link-color-hover           : #{$hacker-green-bright};
+    --global-link-color-visited         : #{$hacker-green-dim};
+    --global-masthead-link-color        : #{$hacker-text};
+    --global-masthead-link-color-hover  : #{$hacker-green};
+    --global-text-color                 : #{$hacker-text};
+    --global-text-color-light           : #{$hacker-text-muted};
+    --global-thead-color                : #{$hacker-gray};
+}
+
+/* Override fonts for hacker light theme - digital clock style */
+html[data-theme="hacker-light"] {
+    --global-font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    --header-font-family: "Orbitron", "Share Tech Mono", "JetBrains Mono", sans-serif;
+}
+
+/* Body and paragraph font override */
+html[data-theme="hacker-light"] body {
+    font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+}
+
+html[data-theme="hacker-light"] p,
+html[data-theme="hacker-light"] li,
+html[data-theme="hacker-light"] span,
+html[data-theme="hacker-light"] div {
+    font-family: "Share Tech Mono", "JetBrains Mono", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+}
+
+/* Digital clock styling for headers - 24-style */
+html[data-theme="hacker-light"] h1,
+html[data-theme="hacker-light"] h2,
+html[data-theme="hacker-light"] h3,
+html[data-theme="hacker-light"] h4,
+html[data-theme="hacker-light"] h5,
+html[data-theme="hacker-light"] h6 {
+    font-family: "Orbitron", "Share Tech Mono", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #{$hacker-text-dark};
+}
+
+/* Link effect for hacker light theme */
+html[data-theme="hacker-light"] a {
+    color: #{$hacker-green};
+    transition: all 0.3s ease;
+}
+
+html[data-theme="hacker-light"] a:hover {
+    color: #{$hacker-green-bright};
+    text-shadow: 0 0 8px rgba($hacker-green, 0.3);
+}
+
+/* Code blocks styling */
+html[data-theme="hacker-light"] pre,
+html[data-theme="hacker-light"] code {
+    background-color: #{$hacker-gray-light};
+    border: 1px solid #{$hacker-border};
+    border-radius: 4px;
+}
+
+html[data-theme="hacker-light"] pre {
+    border-left: 3px solid #{$hacker-green};
+}
+
+/* Selection styling - hacker green */
+html[data-theme="hacker-light"] ::selection {
+    background-color: rgba($hacker-green, 0.2);
+    color: #{$hacker-text};
+}
+
+/* Scrollbar styling for webkit browsers */
+html[data-theme="hacker-light"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html[data-theme="hacker-light"] ::-webkit-scrollbar-track {
+    background: #{$hacker-bg};
+}
+
+html[data-theme="hacker-light"] ::-webkit-scrollbar-thumb {
+    background: #{$hacker-border-dark};
+    border-radius: 5px;
+}
+
+html[data-theme="hacker-light"] ::-webkit-scrollbar-thumb:hover {
+    background: #{$hacker-green};
+}
+
+/* Terminal-style notices */
+html[data-theme="hacker-light"] .notice {
+    border-left: 4px solid #{$hacker-green};
+    background-color: rgba($hacker-green, 0.05);
+}
+
+html[data-theme="hacker-light"] .notice--info {
+    border-left-color: #{$hacker-cyan};
+    background-color: rgba($hacker-cyan, 0.05);
+}
+
+html[data-theme="hacker-light"] .notice--warning {
+    border-left-color: #{$hacker-yellow};
+    background-color: rgba($hacker-yellow, 0.05);
+}
+
+html[data-theme="hacker-light"] .notice--danger {
+    border-left-color: #{$hacker-red};
+    background-color: rgba($hacker-red, 0.05);
+}
+
+/* Buttons */
+html[data-theme="hacker-light"] .btn {
+    background-color: #{$hacker-gray-light};
+    border: 1px solid #{$hacker-border};
+    color: #{$hacker-text};
+    font-family: "Orbitron", "Share Tech Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+html[data-theme="hacker-light"] .btn:hover {
+    background-color: #{$hacker-gray};
+    border-color: #{$hacker-green};
+    color: #{$hacker-green};
+    box-shadow: 0 0 10px rgba($hacker-green, 0.2);
+}
+
+html[data-theme="hacker-light"] .btn--primary {
+    background-color: #{$hacker-green};
+    color: #{$hacker-white};
+}
+
+html[data-theme="hacker-light"] .btn--primary:hover {
+    background-color: #{$hacker-green-bright};
+    box-shadow: 0 0 15px rgba($hacker-green, 0.3);
+}
+
+/* Digital countdown style for dates/numbers - like "24" clock */
+html[data-theme="hacker-light"] time,
+html[data-theme="hacker-light"] .date {
+    font-family: "Orbitron", "Share Tech Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #{$hacker-green};
+}
+
+/* Site title - digital clock style */
+html[data-theme="hacker-light"] .site-title {
+    font-family: "Orbitron", "Share Tech Mono", sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
