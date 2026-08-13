@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -9,70 +9,55 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* **Master’s Degree in Engineering**, specialization in [Computer Science](https://www.rennes.centralesupelec.fr/en/InfoSec), [CentraleSupélec](https://www.centralesupelec.fr/en/engineering-curriculum), France, 2024
-* **Master’s Degree in Hardware Security** (Visiting Student), [Université Rennes I](https://cyberschool.univ-rennes.fr/en/education/cybersecurity-training-programmes/masters-cybersecurity-science-of-software-and-hardware-security/hardware-security/), France, 2021-2024
-* **Associate’s Degree**, Scientific Preparatory Classes for Grandes Écoles ([CPGE](https://en.wikipedia.org/wiki/Grande_%C3%A9cole)), [Saint Aubin Lasalle](https://www.staubinlasalle.fr/), France, 2019-2021
+Cybersecurity engineer with a broad, hands-on profile. I work on securing and evolving IT and OT environments with an operational approach.
 
 Work experience
 ======
 
-* **2024–Present**: [Ornisec](https://www.ornisec.com/)
-  * Mandated ICS cybersecurity consultant at [Enedis](https://www.enedis.fr/)
-  * Penetration testing
-  * System security management
+* **2024–Present**: Auditor and cybersecurity consultant IT/IoT/OT, [Ornisec](https://www.ornisec.com/), France
+  * Risk analyses using the EBIOS-RM methodology.
+  * PASSI audits (architecture, configuration, source code, organizational, physical).
+  * Internal ISO/IEC 27001 audits.
+  * Cybersecurity referent for industrial (OT) and embedded (IoT) equipment at [Enedis](https://www.enedis.fr/).
+  * Topics: PKI/HSM, PKCS#11, cryptography, security specification/qualification/audit and inventory/mapping of IoT/OT equipment.
 
-* **2023–2024**: [Enedis](https://www.enedis.fr/)
-  * Risk Management
-  * Hardware Security: Secure Elements, HSM (Hardware Security Modules)
-  * Cryptography
-  * Programming: Python, Bash
+* **2023–2024**: Embedded systems cybersecurity audit — Work-study program, [Enedis](https://www.enedis.fr/), France
+  * Cybersecurity of embedded systems for the electricity distribution network.
+  * Risk analyses and defense-in-depth approach.
+  * Topics: hardware security modules, PCB (printed circuit board) pentesting, scripting (Python, Bash), power-line communication (PLC).
 
-* **2021–2023**: [Enedis](https://www.enedis.fr/)
-  * Data Analysis
-  * Programming: Python, SQL, Excel-VBA, Power Query, Power Automate, Power BI
+* **2021–2023**: Losses and fraud project manager — Work-study program, [Enedis](https://www.enedis.fr/), France
+  * Implementation of procedures to reduce non-technical losses and electricity consumption fraud, based on data analysis.
+  * Creation of KPIs for operational activity monitoring under Excel/VBA.
+  * Business owner (MOA): follow-up of the Data Protection Impact Assessment (DPIA).
+  * Business analyst (MOE): drafting of personal data (PII) passports for the DPO.
+  * Topics: TURPE, GRC, GDPR compliance, low-voltage electrical networks, data mining, SQL, Python, R.
 
-* **2021–2023**: [Superprof](https://www.superprof.fr/)
-  * Private maths teacher for students from sophomore to bachelor level.
-
+Education
+======
+* **Engineering Degree (Ingénieur Généraliste)**, specialization in Computer Science and Cybersecurity: Computer Science, Cybersecurity, Electronics, Data/AI, Management — GPA: 4.23/5.0, [CentraleSupélec](https://www.centralesupelec.fr/en/engineering-curriculum), France, 2021–2024
+* **Master 2 in Computer Science** (Visiting Student), Advanced Hardware Protection: attacks on embedded systems (side channels, glitching, JTAG, ...), [Université de Rennes](https://cyberschool.univ-rennes.fr/en/education/cybersecurity-training-programmes/masters-cybersecurity-science-of-software-and-hardware-security/hardware-security/), France, 2023–2024
+* **CPGE PTSI/PT** (Major, 2019–2021, Mention Très Bien), Engineering Sciences, Physics-Chemistry and Mathematics, [Saint Aubin Lasalle](https://www.staubinlasalle.fr/), France, 2019–2021
+* **Baccalauréat, Série C** (Major, Mention Bien), Mathematics, Physics-Chemistry, Lycée Classique d'Abidjan, Côte d'Ivoire, 2016–2019
 
 Certifications
 ======
 
-* **[EJPT](https://certs.ine.com/1fb25060-80dd-4161-8e13-f96b4d74f7c4#acc.KumnvyhU) (2025)**: Entry-level Penetration testers that validates that the individual has the knowledge, skills, and abilities required to fulfill a role as a junior penetration tester.
+* **EJPT (2025)**: Entry-level penetration testing certification validating the knowledge, skills, and abilities required to fulfill the role of a junior penetration tester.
+* **ISO 27001 Lead Auditor (2026)**: This is a certified professional qualified to plan, lead, and conduct audits of Information Security Management Systems (ISMS) in compliance with ISO/IEC 27001 standards.
 
-<!-- Skills
+Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Languages**: French, English (TOEIC 910/990, Linguaskill C1)
+* **Systems**: Linux (RHEL/Debian/Rocky), Active Directory
+* **Virtualization**: LXC (Proxmox), VirtualBox, containerization (Docker, Podman), WSL
+* **Protocols**: 6LoWPAN, ISO 7816, EAP
+* **Programming**: Java, C, Python, Bash
+* **Development**: Ant, Maven, Flask, React
+* **DevOps & CI/CD**: Jenkins, Kubernetes, GitHub Actions
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
 Service and leadership
 ======
-* [Elit](https://www.elitasso.com/) – Association promoting excellence and leadership among youth.
-* [DJC](https://www.linkedin.com/company/diaspora-junior-consulting-djc/) – Association encouraging African diaspora to contribute their expertise to the continent.
-* [MANIA](https://www.linkedin.com/showcase/maison-africaine-du-num%C3%A9rique-et-de-l-intelligence-artificielle-mania/) – Promoting digital and AI education in Africa.
-* **IvoireTeK** – Community for Ivorian professionals in computer science living in France.
-* [Re2o](https://rezo-rm.fr/) (2021–2024) – Network operators association for CentraleSupélec campuses in Rennes and Metz. -->
+* [Elit Club](https://www.elitasso.com/) (2025–Present) — Member of the Digital club, committed to reducing the digital divide between Africa and developed countries through the promotion and democratization of digital technology in Africa. Topics: preparing thematic webinars and writing IT/cybersecurity outreach articles.
+* [African Engineers Network](https://www.linkedin.com/company/diaspora-junior-consulting-djc/) (2024–Present) — Business development lead and IT consultant within the advisory branch, connecting African diaspora engineers to support technological and social initiatives across Africa. Topics: client needs qualification, technical and commercial proposals, project scoping and management, client relations, communication campaigns, website development.
+* [Rézo Metz-Rennes Fédérés](https://rezo-rm.fr/) (2021–2024) — Treasurer and IT support. Contributed to maintaining the network infrastructure (Wi-Fi, Ethernet, fiber) of the CentraleSupélec campuses (Metz, Rennes) and providing IT services, including Internet access.
