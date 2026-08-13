@@ -45,12 +45,37 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+
+  nav {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+.masthead__theme-toggle {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+
+  a {
+    display: flex;
+    width: 25px;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+    }
   }
 }
 

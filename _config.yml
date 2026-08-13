@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "hacker"
+site_theme               : "hacker-light"
 title                    : "EKO - Home"
 title_separator          : "-"
 name                     : &name "Emmanuel KONAN"
@@ -163,7 +163,6 @@ exclude:
   - _talks/
   - _publications/
   - _teaching/
-  - _portfolio/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

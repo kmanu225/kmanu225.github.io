@@ -210,3 +210,10 @@ html[data-theme="hacker"] .site-title {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+/* GitHub's brand color is near-black, unreadable on this theme's dark background */
+html[data-theme="hacker"] .fa-github,
+html[data-theme="hacker"] .fa-github-alt,
+html[data-theme="hacker"] .fa-github-square {
+    color: #{$matrix-text};
+}

@@ -20,12 +20,12 @@ $(document).ready(function () {
   // Check for saved theme preference
   const savedTheme = localStorage.getItem("theme");
 
-  // Set initial theme based on saved preference (defaults to hacker in HTML if none saved)
+  // Set initial theme based on saved preference (defaults to hacker-light in HTML if none saved)
   if (savedTheme) {
     setTheme(savedTheme);
   } else {
     // Set icon for default theme
-    setTheme("hacker");
+    setTheme("hacker-light");
   }
 
   // Theme toggle button click handler
