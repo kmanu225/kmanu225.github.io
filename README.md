@@ -1,112 +1,77 @@
-# 📚 Personal Academic Website
+# kmanu225.github.io
 
-This repository hosts my **personal blog and academic portfolio**, built using the [**Academic Pages**](https://academicpages.github.io/) template — a modern, customizable Jekyll theme for GitHub Pages.
+Personal website of **Emmanuel Konan** — portfolio and blog, built with [Jekyll](https://jekyllrb.com/) on top of the [Academic Pages](https://academicpages.github.io/) theme, hosted on GitHub Pages.
 
-> Academic Pages is designed for researchers, students, and professionals to showcase their publications, projects, and achievements.
+The site features two custom "hacker" themes (Matrix-style green-on-black and a light variant), configurable via `site_theme` in `_config.yml`.
 
----
+## Content
 
-## 🚀 Getting Started
+- `_posts/` — blog posts
+- `_portfolio/` — project portfolio entries
+- `_publications/`, `_talks/`, `_teaching/` — academic collections (currently unused, kept for future content)
+- `_pages/` — static pages (e.g. `about.md`)
+- `_data/cv.json` — CV/resume data (JSON Resume format)
+- `images/`, `files/` — static assets and downloadable files (PDFs, etc.)
 
-To set up your own site using this template:
+## Running locally
 
-1. **Sign up or log in** to [GitHub](https://github.com/) and verify your email.
-2. Go to the [Academic Pages GitHub repo](https://github.com/academicpages/academicpages.github.io).
-3. Click **“Use this template”** (top-right) to create your own copy.
-4. Name the repo:
-   ➤ `your-username.github.io`
-   This will become your website’s URL:
-   ➤ `https://your-username.github.io`
-5. Customize your site content and `_config.yml` settings.
-6. Add files (e.g., PDFs) to the `files/` directory. Access them at:
-   ➤ `https://your-username.github.io/files/example.pdf`
-7. To check publishing status, go to **Settings → Pages** in your repo.
-8. *(Optional)* Use the Python/Jupyter tools in the `markdown_generator/` folder to generate publication pages from TSV files.
+### Option A — Ruby/Jekyll directly
 
-More setup help: [https://academicpages.github.io](https://academicpages.github.io/)
+Requirements: Ruby (3.x), Bundler, Node.js.
 
----
-
-## 🧪 Running Locally
-
-To preview your site locally before pushing:
-
-### ✅ Requirements
-
-Install dependencies:
-
-* `ruby-dev`, `bundler`, `nodejs` (Linux/WSL)
-* `ruby`, `node`, `bundler` (Mac)
-
-**On WSL or Ubuntu:**
+Some gems (e.g. `bigdecimal`) build native extensions and need Ruby's development headers and a compiler. On Debian/Ubuntu:
 
 ```bash
-sudo apt update && sudo apt install ruby-dev ruby-bundler nodejs build-essential make
+sudo apt-get update
+sudo apt-get install -y ruby3.2-dev build-essential
 ```
 
-**On macOS (with Homebrew):**
-
-```bash
-brew install ruby node
-gem install bundler
-```
-
-### ✅ Build and Serve
+(Use the `-dev` package matching your installed Ruby version, e.g. `ruby3.2-dev`; check with `ruby -v`.)
 
 ```bash
 bundle install
 bundle exec jekyll serve -l -H localhost
 ```
 
-If you encounter permission errors:
+The site is served at `http://localhost:4000` with livereload on port `35729`. `-l` enables livereload so the browser refreshes automatically on file changes.
+
+If you hit permission errors installing gems:
 
 ```bash
 bundle config set --local path 'vendor/bundle'
 bundle install
 ```
 
----
+> `_config.yml` is **not** hot-reloaded — restart `jekyll serve` after editing it.
 
-## 🐳 Running with Docker
+### Option B — Docker
 
-To avoid installing Ruby and Node locally, use the included `Dockerfile`:
+No local Ruby/Node install needed:
 
 ```bash
 docker compose up
 ```
 
-Then open:
-👉 `http://localhost:4000`
+This builds the image from `Dockerfile`, mounts the repo for live editing, and serves at `http://localhost:4000` (livereload on `35729`).
 
----
+### JavaScript changes
 
-## 🔧 Maintenance & Contributions
+If you edit files under `assets/js/`, rebuild the minified bundle:
 
-* **Bug reports**: [Open an issue](https://github.com/academicpages/academicpages.github.io/issues/new/choose)
-* **Theme help/discussion**: [Start a GitHub discussion](https://github.com/academicpages/academicpages.github.io/discussions)
-* Based on [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), licensed under MIT.
+```bash
+npm install
+npm run build:js    # one-off build to assets/js/main.min.js
+npm run watch:js    # rebuild automatically on change
+```
 
-For submitting improvements:
-➤ Fork the repo (instead of using the template)
-➤ Sync your fork regularly to receive updates
+## Generating content in bulk
 
----
+The `markdown_generator/` directory has Python/Jupyter tools to turn TSV or BibTeX files into `_publications/` or `_talks/` markdown files. Run them from within that directory — see the scripts/notebooks for the expected columns.
 
-## 🛡️ License and Credits
+## Deployment
 
-Maintained by [Robert Zupko](https://github.com/rjzupkoii), originally forked by [Stuart Geiger](https://github.com/staeiou).
-Based on the MIT-licensed [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme.
+The site auto-builds and deploys from the `master` branch via GitHub Pages — no manual deployment step needed. Push to `master` and check **Settings → Pages** in the repo for build status.
 
----
+## Credits
 
-<div align="center">
-
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-
-</div>
+Built on [Academic Pages](https://academicpages.github.io/), itself based on the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme (MIT licensed).

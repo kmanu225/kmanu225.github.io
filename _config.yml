@@ -29,7 +29,7 @@ author:
   location         : "France"
   employer         : # "Organization"
   uri              : # "https://kmanu225.gitbook.io/cs/"
-  email            : # "emmanuel.konan.contact@gmail.com"
+  email            : #
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # "emmanuel-konan"
+  linkedin         : #
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
