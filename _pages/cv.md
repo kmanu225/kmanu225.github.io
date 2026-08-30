@@ -2,6 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+description: "CV of Emmanuel Konan — cybersecurity & IT/OT/IoT security consultant. EBIOS-RM risk analysis, PASSI audits, PKI/HSM, ISO 27001 Lead Auditor."
 author_profile: true
 redirect_from:
   - /resume

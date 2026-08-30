@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/system/linux/security/persistence-me
 number_words: 1500
 tags:
   - cybersecurity
+redirect_from:
+  - /blog-post-9/
 ---
 
 Persistence is a key stage in any cyberattack: once inside, attackers aim to secure a way back even if their original access is closed. At [Black Hat USA 2025](https://www.youtube.com/watch?v=whhOYRWd_rs&ab_channel=JohnHammond), [John Hammond](https://www.youtube.com/@_JohnHammond) highlighted several lesser-known Linux persistence techniques that defenders should watch for.

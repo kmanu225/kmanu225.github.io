@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-foundation
 number_words: 2500
 tags:
   - cryptography
+redirect_from:
+  - /blog-post-5/
 ---
 
 In this article, I explore Public Key Infrastructure (PKI) and its essential role in establishing trust across digital communications. By the end of this article, you'll understand the mechanisms that make secure connections possible, far beyond just the padlock icon in your browser, and how PKI prevents attackers from impersonating trusted parties online.

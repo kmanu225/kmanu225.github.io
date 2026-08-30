@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/cryptography/aes-rijndael
 number_words: 2400
 tags:
   - cryptography
+redirect_from:
+  - /blog-post-1/
 ---
 
 If I were asked to identify a common point between banking transactions, internet communication, and important documents, I would say it's the need for confidentiality. Confidentiality means preventing unauthorized access to information. At the time of writing this post, one of the most widely used algorithms to ensure confidentiality is AES, also known as Rijndael. This blog post briefly covers everything you need to know about AES.

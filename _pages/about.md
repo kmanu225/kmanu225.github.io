@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "About Me"
+description: "Cybersecurity consultant (IT/OT/IoT) with a mathematics background — audits, PKI/cryptography, and ISO 27001 risk management. Based in France."
 author_profile: true
 redirect_from:
   - /about/

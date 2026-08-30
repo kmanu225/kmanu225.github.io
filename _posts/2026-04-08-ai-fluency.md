@@ -4,6 +4,8 @@ date: 2026-04-08
 number_words: 500
 tags:
   - ai
+redirect_from:
+  - /blog-post-14/
 ---
 
 There is no shortage of AI news. Every week brings a new model, a new benchmark, a new controversy. The AI Fluency course by [Anthropic](https://anthropic.skilljar.com/ai-fluency-framework-foundations) gave me an excuse to stop and think. I can only recommend following it as I did; find the link to the course below.

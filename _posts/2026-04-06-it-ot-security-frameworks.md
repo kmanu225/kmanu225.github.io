@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/governance/cybersecurity-frameworks
 number_words: 1000
 tags:
   - cybersecurity
+redirect_from:
+  - /blog-post-13/
 ---
 
 When it comes to cybersecurity frameworks, there is a wide range of resources available. They span from highly technical to non-technical and come from all over the world. Some are now considered essential in the field and are recognized and used by almost everyone. The goal of this short article is to provide a brief overview of the most relevant cybersecurity frameworks.

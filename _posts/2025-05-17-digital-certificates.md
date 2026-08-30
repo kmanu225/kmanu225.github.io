@@ -5,5 +5,7 @@ redirect_to: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-digital-certifi
 number_words: 2000
 tags:
   - cryptography
+redirect_from:
+  - /blog-post-4/
 ---
 In this article, I discuss digital certificates and their crucial role in securing internet communications. By the end of this article, you will understand what lies behind the small padlock icon that appears on the left side of your browser's address bar.

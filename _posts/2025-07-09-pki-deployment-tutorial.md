@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-demo
 number_words: 3000
 tags:
   - cryptography
+redirect_from:
+  - /blog-post-7/
 ---
 
 This tutorial offers a practical, hands-on walkthrough of everything we've covered about certificates and Public Key Infrastructure (PKI).Now it's time to move from theory to real-world application: you'll learn how to set up your own private Certificate Authority, issue certificates, and secure your web applications with that satisfying little padlock icon in your browser (for real).

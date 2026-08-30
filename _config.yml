@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "hacker-light"
-title                    : "EKO - Home"
+title                    : "Emmanuel Konan"
 title_separator          : "-"
 name                     : &name "Emmanuel KONAN"
-description              : &description "personal description"
+description              : &description "Cybersecurity consultant specializing in IT/OT/IoT security audits, PKI/cryptography, and ISO 27001 risk management."
 url                      : https://kmanu225.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kmanu225/kmanu225.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Emmanuel KONAN"
   pronouns         : # "he/his"
-  bio              : "The biggest failure is not to try. — Me"
+  bio              : "Cybersecurity engineer with a broad, hands-on profile in IT/OT/IoT security."
   location         : "France"
-  employer         : # "Organization"
+  employer         : "Ornisec"
   uri              : # "https://kmanu225.gitbook.io/cs/"
-  email            : #
+  email            : "emmanuel.konan.contact@gmail.com"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -46,7 +46,7 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "kmanu225"
-  dockerhub        : "kmanu225"
+  dockerhub        : # Username
   kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
@@ -60,13 +60,13 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : #
+  linkedin         : "emmanuel-konan"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : # "kmanu225"
+  telegram         : "https://t.me/kmanu225"
   tumblr           : # Username
   twitter          : # Username for X / Twitter
   vine             : # Username

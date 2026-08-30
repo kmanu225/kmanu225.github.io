@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/governance/ficoba-dgfip
 number_words: 1000
 tags:
   - dataleak
+redirect_from:
+  - /blog-post-11/
 ---
 
 This article relates a major data breach within the French administration involving banking data. As it mainly concerns French citizens, this article is written in French.

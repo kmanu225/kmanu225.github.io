@@ -5,6 +5,8 @@ redirect_to: https://kmanu225.gitbook.io/cs/system/compilation/cross-compilation
 number_words: 500
 tags:
   - Software-engineering
+redirect_from:
+  - /blog-post-12/
 ---
 
 In this article, I share my experience overcoming a technical challenge while deploying tools on a hardened ARM environment. I detail how I managed to build a functional toolset despite the lack of standard utilities. To access my full technical guide and the specific build recipes I used, please follow the redirection link above.

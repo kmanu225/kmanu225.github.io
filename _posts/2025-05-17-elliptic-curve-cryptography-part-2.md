@@ -5,5 +5,7 @@ redirect_to: https://kmanu225.gitbook.io/cs/cryptography/elliptic-curve-cryptogr
 number_words: 1000
 tags:
   - cryptography
+redirect_from:
+  - /blog-post-3/
 ---
 For this second article on Elliptic Curve Cryptography (ECC), we will discuss how elliptic curves can be defined over finite fields, and what group operations can be performed on their points.
