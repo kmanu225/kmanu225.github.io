@@ -1,15 +1,14 @@
 {
-	"name": "OOjs UI icon academic-progressive",
-	"icons": [
-		{
-			"src": "/images/favicon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/favicon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	]
+  "name": "Emmanuel Konan — Cybersecurity & Applied Cryptography",
+  "short_name": "Emmanuel Konan",
+  "icons": [
+    {
+      "src": "/images/ek-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#14283b",
+  "background_color": "#f8f9fb",
+  "display": "browser"
 }

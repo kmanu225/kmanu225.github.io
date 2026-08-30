@@ -1,0 +1,112 @@
+{
+  "name": "Emmanuel Konan",
+  "headline": "Cybersecurity Consultant | Applied Cryptography & IT/OT/IoT Security",
+  "location": "France",
+  "email": "emmanuel.konan.contact@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/emmanuel-konan",
+  "github": "https://github.com/kmanu225",
+  "website": "https://kmanu225.github.io",
+  "summary": "CentraleSupélec engineer working on technical security audits, industrial and embedded systems, and cryptographic infrastructure. Experience with PKI/HSM, PKCS#11, EBIOS-RM risk analysis and ISO/IEC 27001 internal audits. Coauthor of the EAP-PSK-256 Internet-Draft.",
+  "experience": [
+    {
+      "role": "Auditor & Cybersecurity Consultant — IT/OT/IoT",
+      "organization": "Ornisec",
+      "period": "2024–Present",
+      "bullets": [
+        "Conduct risk analyses using EBIOS-RM and contribute to architecture, configuration, source-code, organizational and physical security audits in PASSI engagements.",
+        "Perform internal ISO/IEC 27001 audits and work on security specifications, qualification and audits of industrial and embedded equipment.",
+        "Act as a cybersecurity referent for OT/IoT equipment at Enedis, with work spanning PKI/HSM, PKCS#11, cryptography and equipment inventory/mapping."
+      ]
+    },
+    {
+      "role": "Embedded Systems Cybersecurity Audit — Work-study",
+      "organization": "Enedis",
+      "period": "2023–2024",
+      "bullets": [
+        "Worked on embedded-system security for the electricity distribution network, combining risk analysis with a defense-in-depth approach.",
+        "Contributed to work involving HSMs, PCB penetration testing, power-line communication, and Python/Bash scripting."
+      ]
+    },
+    {
+      "role": "Losses & Fraud Project Manager — Work-study",
+      "organization": "Enedis",
+      "period": "2021–2023",
+      "bullets": [
+        "Implemented data-informed procedures addressing non-technical losses and electricity consumption fraud; created Excel/VBA KPIs for operational monitoring.",
+        "Followed the Data Protection Impact Assessment as a business owner and drafted personal-data passports for the DPO as a business analyst."
+      ]
+    }
+  ],
+  "contribution": {
+    "title": "EAP-PSK-256 — Cryptographic protocol contribution",
+    "period": "2026",
+    "url": "https://datatracker.ietf.org/doc/draft-eap-psk-256/",
+    "text": "Coauthor of an individual Internet-Draft proposing an evolution of EAP-PSK: AES-256, key derivation based on NIST SP 800-108, and contributions from both peer and server randomness. Work in progress; not an RFC or an IETF-endorsed standard."
+  },
+  "skills": [
+    {
+      "title": "Cryptography & digital trust",
+      "text": "PKI, HSM, PKCS#11, digital certificates, EAP, AES and elliptic-curve cryptography."
+    },
+    {
+      "title": "Security & risk",
+      "text": "IT/OT/IoT security, technical audits, EBIOS-RM, ISO/IEC 27001, defense in depth."
+    },
+    {
+      "title": "Systems & engineering",
+      "text": "Linux (RHEL, Debian, Rocky), Active Directory, C, Python, Bash, Java, Docker/Podman, GitHub Actions."
+    },
+    {
+      "title": "Additional tools",
+      "text": "SQL, R, Excel/VBA, Proxmox/LXC, Jenkins, Kubernetes, Flask and React."
+    }
+  ],
+  "education": [
+    {
+      "title": "Engineering Degree — Computer Science & Cybersecurity",
+      "organization": "CentraleSupélec",
+      "period": "2021–2024",
+      "text": "General engineering curriculum spanning computer science, cybersecurity, electronics, data/AI and management."
+    },
+    {
+      "title": "Visiting Student — Advanced Hardware Protection, Master 2 curriculum",
+      "organization": "Université de Rennes",
+      "period": "2023–2024",
+      "text": "Coursework in embedded-system attacks, including side channels, glitching and JTAG."
+    },
+    {
+      "title": "Preparatory Classes — PTSI/PT",
+      "organization": "Saint Aubin La Salle",
+      "period": "2019–2021",
+      "text": "Mathematics, physics and engineering sciences."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "ISO 27001 Lead Auditor",
+      "year": "2026"
+    },
+    {
+      "title": "eJPT",
+      "year": "2025"
+    }
+  ],
+  "leadership": [
+    {
+      "title": "African Engineers Network — Business Development Lead & IT Consultant",
+      "period": "2024–Present",
+      "text": "Client needs qualification, technical and commercial proposals, project scoping, client relations and web delivery within the advisory initiative."
+    },
+    {
+      "title": "Elit Club — Digital Club Member",
+      "period": "2025–Present",
+      "text": "Webinar preparation and IT/cybersecurity outreach supporting access to digital skills in Africa."
+    },
+    {
+      "title": "Rézo Metz-Rennes Fédérés — Treasurer & IT Support",
+      "period": "2021–2024",
+      "text": "Contributed to campus network maintenance and IT services across Wi-Fi, Ethernet and fiber."
+    }
+  ],
+  "languages": "French; English — TOEIC 910/990, Linguaskill C1."
+}

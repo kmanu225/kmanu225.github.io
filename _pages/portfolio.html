@@ -1,13 +1,13 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Selected work"
+kicker: "Case studies & contributions"
 permalink: /portfolio/
-description: "Selected cybersecurity and software engineering projects by Emmanuel Konan: PDF tooling, network security, automation, and web deployment."
-author_profile: true
+description: "Applied cryptography, security engineering and practical delivery. Each case study makes the context, contribution and boundaries explicit."
+lang: en
 ---
-
-{% include base_path %}
-
-{% for post in site.portfolio reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="case-grid">{% assign studies = site.portfolio | sort: 'rank' %}{% for study in studies %}{% if study.category == 'security' %}{% include case-card.html study=study %}{% endif %}{% endfor %}</div>
+<h2 class="section-label">Client delivery & community projects</h2>
+<p class="section-intro">Complementary work in requirements gathering, automation, web engineering and deployment.</p>
+<div class="case-grid">{% for study in studies %}{% unless study.category == 'security' %}{% include case-card.html study=study %}{% endunless %}{% endfor %}</div>
+<p class="scope-note">Professional experience, public contributions and personal labs are identified separately. No confidential client findings or internal architectures are published here.</p>

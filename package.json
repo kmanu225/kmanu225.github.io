@@ -1,7 +1,7 @@
 {
-  "name": "academic-pages",
+  "name": "emmanuel-konan-portfolio",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Cybersecurity and applied cryptography portfolio, built with Jekyll",
   "repository": {
     "type": "git",
     "url": "https://github.com/academicpages/academicpages.github.io"
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/academicpages/academicpages.github.io",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 22"
   },
   "dependencies": {
     "fitvids": "^2.1.1",
@@ -30,10 +30,16 @@
     "magnific-popup": "^1.2.0"
   },
   "devDependencies": {
+    "axe-core": "4.10.3",
+    "playwright": "1.62.1",
+    "sharp": "0.35.4",
     "onchange": "^7.1.0",
     "uglify-js": "^3.17.4"
   },
   "scripts": {
+    "test:site": "node tests/site-smoke.cjs",
+    "build:assets": "node scripts/build_brand_assets.cjs",
+    "build:site": "bundle exec jekyll build",
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify"

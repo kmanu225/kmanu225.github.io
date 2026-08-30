@@ -1,0 +1,11 @@
+{% assign cv = site.data.cv %}
+<div class="cv-actions"><a class="button button-primary" href="{{ '/files/emmanuel-konan-cv.pdf' | relative_url }}" download>Download CV (PDF) ↓</a><a class="button button-secondary" href="{{ cv.linkedin }}">LinkedIn ↗</a><a class="button button-secondary" href="mailto:{{ cv.email }}">Email me ↗</a></div>
+<p class="lead">{{ cv.summary }}</p>
+<p class="meta">{{ cv.location }} · {{ cv.languages }}</p>
+<section class="cv-section" aria-labelledby="experience-heading"><h2 id="experience-heading">Professional experience</h2>
+{% for entry in cv.experience %}<div class="cv-entry"><h3>{{ entry.role }}</h3><p class="meta">{{ entry.organization }} · {{ entry.period }}</p><ul>{% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul></div>{% endfor %}</section>
+<section class="cv-section" aria-labelledby="contribution-heading"><h2 id="contribution-heading">Public cryptography contribution</h2><h3>{{ cv.contribution.title }}</h3><p>{{ cv.contribution.text }}</p><p><a href="{{ cv.contribution.url }}">View the Internet-Draft on IETF Datatracker ↗</a> · <a href="{{ '/portfolio/2026-06-22-eap-psk-256/' | relative_url }}">Read the case study</a></p></section>
+<section class="cv-section" aria-labelledby="skills-heading"><h2 id="skills-heading">Technical capabilities</h2><div class="cv-skills">{% for skill in cv.skills %}<div><h3>{{ skill.title }}</h3><p>{{ skill.text }}</p></div>{% endfor %}</div></section>
+<section class="cv-section" aria-labelledby="education-heading"><h2 id="education-heading">Education</h2>{% for entry in cv.education %}<div class="cv-entry"><h3>{{ entry.title }}</h3><p class="meta">{{ entry.organization }} · {{ entry.period }}</p><p>{{ entry.text }}</p></div>{% endfor %}</section>
+<section class="cv-section" aria-labelledby="certifications-heading"><h2 id="certifications-heading">Certifications</h2><ul>{% for entry in cv.certifications %}<li><strong>{{ entry.title }}</strong> · {{ entry.year }}</li>{% endfor %}</ul></section>
+<section class="cv-section" aria-labelledby="leadership-heading"><h2 id="leadership-heading">Leadership & community</h2>{% for entry in cv.leadership %}<div class="cv-entry"><h3>{{ entry.title }}</h3><p class="meta">{{ entry.period }}</p><p>{{ entry.text }}</p></div>{% endfor %}</section>

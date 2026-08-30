@@ -1,5 +1,8 @@
 ---
-title: 'AI Fluency'
+title: 'AI fluency: using tools with judgment'
+description: 'Notes on responsible AI use, human review and the difference between automation, augmentation and agency.'
+lang: en
+topic: engineering
 date: 2026-04-08
 number_words: 500
 tags:

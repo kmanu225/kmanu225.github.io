@@ -1,11 +1,29 @@
 ---
-title: 'Digital Certificates'
+title: "Digital certificates: identity, keys and trust"
+description: "Understanding what a certificate binds together, how a trust chain is validated, and what certificates do not guarantee."
 date: 2025-05-17
-redirect_to: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-digital-certificates
-number_words: 2000
+modified: 2026-08-31
+lang: en
+topic: cryptography
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-digital-certificates
 tags:
   - cryptography
 redirect_from:
   - /blog-post-4/
 ---
-In this article, I discuss digital certificates and their crucial role in securing internet communications. By the end of this article, you will understand what lies behind the small padlock icon that appears on the left side of your browser's address bar.
+
+## What a certificate establishes
+
+A digital certificate associates a public key with identity information under an issuer’s signature. Its usefulness depends on the relying party’s validation policy and trust anchors.
+
+A certificate is not, by itself, proof that a service is harmless or that its private key is well protected.
+
+## Review the complete validation path
+
+Consider the expected service identity, certificate validity, permitted usages, issuer chain and the relying party’s trust configuration. The operational handling of revocation and renewal also matters.
+
+## Practical perspective
+
+Issuing a certificate is only one step. A useful deployment needs clear ownership, automation where appropriate and a plan for expiry or key compromise.
+
+The detailed guide explains certificates as a component of PKI. For a concrete learning environment, see my [private PKI case study]({{ '/portfolio/2026-08-30-private-pki-lab/' | relative_url }}).

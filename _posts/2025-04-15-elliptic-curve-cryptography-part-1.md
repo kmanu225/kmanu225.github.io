@@ -1,13 +1,29 @@
 ---
-title: 'Elliptic Curve Cryptography (ECC) - Part 1'
+title: "Elliptic-curve cryptography: the mathematical foundation"
+description: "An introduction to elliptic curves and the distinction between mathematical structure and secure protocol implementation."
 date: 2025-04-15
-redirect_to: https://kmanu225.gitbook.io/cs/cryptography/elliptic-curve-cryptography/part-1-what-are-elliptic-curves
-number_words: 500
+modified: 2026-08-31
+lang: en
+topic: cryptography
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/elliptic-curve-cryptography/part-1-what-are-elliptic-curves
 tags:
   - cryptography
 redirect_from:
   - /blog-post-2/
 ---
-If you’ve ever created an RSA-based SSH key, you might have been surprised by the size of the key it generated. Elliptic Curve Cryptography (ECC), on the other hand, offers much shorter keys while maintaining the same level of security. Since its introduction, ECC has steadily gained popularity and has increasingly replaced RSA for both confidentiality (encryption) and non-repudiation (digital signatures). 
-**This is the first post in a series** on Elliptic Curve Cryptography.
 
+## Why start with the mathematics?
+
+Elliptic-curve cryptography builds protocols on mathematical structures with efficient operations and computationally difficult inverse problems. Understanding that foundation helps explain how relatively compact keys can support public-key operations.
+
+Comparisons with RSA require equivalent security levels; equal key lengths do not imply equal security.
+
+## What this introduction covers
+
+This is the first part of my series on elliptic curves. It introduces the objects and geometric intuition before the second part moves to finite fields.
+
+## From theory to engineering
+
+The mathematics is only a starting point. A deployed system also needs appropriate parameters, validated inputs and carefully implemented operations.
+
+For applied work, I would separate the choice of cryptographic scheme from implementation assurance and key lifecycle management. An introductory derivation should not become a production cryptographic library.
