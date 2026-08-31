@@ -1,5 +1,5 @@
 {% assign post = include.post %}
 <article class="article-row">
   <time class="meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
-  <div><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | truncate: 200 }}</p></div><span class="article-arrow" aria-hidden="true">↗</span>
+  <div><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | truncate: 200 }}</p></div><span class="article-arrow">{% include icon.html name="arrow-up-right" %}</span>
 </article>

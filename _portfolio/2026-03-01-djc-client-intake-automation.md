@@ -3,7 +3,8 @@ title: "DJC Client Intake Automation (Google Apps Script)"
 excerpt: "A Google Apps Script workflow that emails client form responses to the consulting manager."
 collection: portfolio
 lang: en
-category: delivery
+portfolio_categories:
+  - software-engineering-writing
 rank: 5
 study_type: "Community project · Automation"
 date: 2026-03-01

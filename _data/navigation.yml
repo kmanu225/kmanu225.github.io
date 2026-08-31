@@ -1,11 +1,15 @@
 main:
   - title: Expertise
+    icon: shield
     url: /#expertise
   - title: Projects
+    icon: folder
     url: /portfolio/
     collection: portfolio
   - title: Articles
+    icon: book
     url: /blog-posts/
     collection: posts
   - title: CV
+    icon: file
     url: /cv/

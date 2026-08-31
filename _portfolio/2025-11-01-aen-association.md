@@ -3,7 +3,8 @@ title: "AEN Association — Website Design"
 excerpt: "An association website built with other AEN members using Hostinger Website Builder."
 collection: portfolio
 lang: en
-category: delivery
+portfolio_categories:
+  - software-engineering-writing
 rank: 7
 study_type: "Community project · Web delivery"
 date: 2025-11-01

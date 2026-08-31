@@ -1,32 +1,36 @@
 <section class="hero" aria-labelledby="hero-title">
-  <div>
+  <div class="hero-copy">
     <p class="eyebrow">Cybersecurity consultant · France</p>
-    <h1 id="hero-title">Emmanuel Konan</h1>
+    <h1 id="hero-title"><span>Emmanuel</span> <span>Konan</span></h1>
     <p class="lead">I work on security audits and industrial systems. Here I share my projects and notes on cybersecurity and software engineering.</p>
     <div class="actions">
-      <a class="button button-primary" href="{{ '/blog-posts/' | relative_url }}">Read the articles <span aria-hidden="true">↗</span></a>
-      <a class="button button-secondary" href="{{ '/files/emmanuel-konan-cv.pdf' | relative_url }}" download>Download CV <span class="file-type">PDF</span></a>
+      <a class="button button-primary" href="{{ '/blog-posts/' | relative_url }}">Read the articles {% include icon.html name="arrow-up-right" %}</a>
+      <a class="button button-secondary" href="{{ '/files/emmanuel-konan-cv.pdf' | relative_url }}" download>{% include icon.html name="download" %} Download CV <span class="file-type">PDF</span></a>
+    </div>
+    <div class="profile-caption">
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{% include icon.html name="linkedin" %}<span>LinkedIn</span>{% include icon.html name="arrow-up-right" class="external-icon" %}</a>
+      <a href="https://github.com/{{ site.author.github }}">{% include icon.html name="github" %}<span>GitHub</span>{% include icon.html name="arrow-up-right" class="external-icon" %}</a>
     </div>
   </div>
-  <aside class="profile-card" aria-label="Social profiles">
+  <div class="profile-card">
     <img class="profile-photo" src="{{ '/images/profile.webp' | relative_url }}" width="500" height="749" alt="Emmanuel Konan" fetchpriority="high">
-    <div class="profile-caption"><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn ↗</a><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a></div>
-  </aside>
+  </div>
 </section>
-<section id="expertise" class="home-section" aria-labelledby="expertise-title">
-  <div class="section-heading"><h2 id="expertise-title">What I work on</h2></div>
+<section id="expertise" class="home-section expertise-section" aria-labelledby="expertise-title">
+  <h2 id="expertise-title" class="visually-hidden">What I work on</h2>
   <div class="expertise-grid">
-    <article class="expertise-card featured"><h3>Cryptography</h3><p>Authentication protocols, certificates and key management. I also work on integrating post-quantum cryptography (PQC) into systems with limited compute and storage resources.</p><div class="tag-list"><span class="tag">PKI / HSM</span><span class="tag">PKCS#11</span><span class="tag">EAP</span><span class="tag">PQC</span></div></article>
-    <article class="expertise-card"><h3>Industrial & embedded systems</h3><p>Equipment security specifications, qualification and audits for electricity distribution.</p><div class="tag-list"><span class="tag">OT / IoT</span><span class="tag">Linux / ARM</span></div></article>
-    <article class="expertise-card"><h3>Audits & risk analysis</h3><p>Architecture, configuration and source-code reviews, risk analysis and internal audits.</p><div class="tag-list"><span class="tag">EBIOS-RM</span><span class="tag">ISO 27001</span></div></article>
+    <a class="expertise-card" href="{{ '/portfolio/#security-audits' | relative_url }}" aria-labelledby="expertise-security-audits"><span class="expertise-icon">{% include icon.html name="shield" %}</span><h3 id="expertise-security-audits">Security audits</h3><p>Architecture, configuration and source-code reviews. EBIOS-RM risk analysis and ISO 27001 internal audits.</p></a>
+    <a class="expertise-card" href="{{ '/portfolio/#industrial-systems' | relative_url }}" aria-labelledby="expertise-industrial-systems"><span class="expertise-icon">{% include icon.html name="factory" %}</span><h3 id="expertise-industrial-systems">Industrial systems</h3><p>Security specifications, qualification and audits of industrial and embedded equipment.</p></a>
+    <a class="expertise-card" href="{{ '/portfolio/#cryptography' | relative_url }}" aria-labelledby="expertise-cryptography"><span class="expertise-icon">{% include icon.html name="key" %}</span><h3 id="expertise-cryptography">Cryptography</h3><p>Authentication, PKI and key management. PQC integration with limited compute and storage resources.</p></a>
+    <a class="expertise-card" href="{{ '/portfolio/#software-engineering-writing' | relative_url }}" aria-labelledby="expertise-software-engineering-writing"><span class="expertise-icon">{% include icon.html name="code" %}</span><h3 id="expertise-software-engineering-writing">Software Engineering &amp; writing</h3><p>Software projects, automation and technical notes on cybersecurity and engineering.</p></a>
   </div>
 </section>
 <section class="home-section" aria-labelledby="writing-title">
-  <div class="section-heading"><h2 id="writing-title">Articles</h2><a class="text-link" href="{{ '/blog-posts/' | relative_url }}">All articles ↗</a></div>
+  <div class="section-heading"><h2 id="writing-title">Articles</h2><a class="text-link" href="{{ '/blog-posts/' | relative_url }}">All articles {% include icon.html name="arrow-right" %}</a></div>
   <div class="article-list">{% assign selected_posts = site.posts | where: 'featured', true | sort: 'rank' %}{% for post in selected_posts %}{% include article-row.html post=post %}{% endfor %}</div>
 </section>
 <section class="home-section about-grid" aria-labelledby="about-title">
   <div><h2 id="about-title">About me</h2></div>
-  <div><p>Originally from Côte d’Ivoire, I graduated from CentraleSupélec in 2024 after studying mathematics, physics and engineering sciences in preparatory classes.</p><p>I also volunteer with the African Engineers Network, where I help scope projects, prepare proposals and build websites.</p><a class="text-link" href="{{ '/cv/' | relative_url }}">View my CV ↗</a></div>
+  <div><p>Originally from Côte d’Ivoire, I graduated from CentraleSupélec in 2024 after studying mathematics, physics and engineering sciences in preparatory classes.</p><p>I also volunteer with the African Engineers Network, where I help scope projects, prepare proposals and build websites.</p><a class="text-link" href="{{ '/cv/' | relative_url }}">View my CV {% include icon.html name="arrow-right" %}</a></div>
 </section>
-<section id="contact" class="contact-panel" aria-labelledby="contact-title"><div><h2 id="contact-title">Contact</h2><p>You can email me about an article, a project or a work opportunity.</p></div><a class="button button-primary" href="mailto:{{ site.author.email }}">Email me <span aria-hidden="true">↗</span></a></section>
+<section id="contact" class="contact-panel" aria-labelledby="contact-title"><div><h2 id="contact-title">Contact</h2><p>You can email me about an article, a project or a work opportunity.</p></div><a class="button button-primary" href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %} Email me</a></section>

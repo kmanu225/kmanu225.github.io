@@ -3,7 +3,8 @@ title: "Website Hosting & Deployment"
 excerpt: "Domain, DNS, TLS and hosting configuration for client websites."
 collection: portfolio
 lang: en
-category: delivery
+portfolio_categories:
+  - software-engineering-writing
 rank: 8
 study_type: "Client delivery · Hosting"
 date: 2025-09-01

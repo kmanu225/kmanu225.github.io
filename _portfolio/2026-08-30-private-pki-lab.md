@@ -6,7 +6,8 @@ description: "A Debian-based Step-CA lab covering certificate issuance, service 
 collection: portfolio
 date: 2026-08-30
 lang: en
-category: security
+portfolio_categories:
+  - cryptography
 study_type: "Personal lab · PKI engineering"
 featured: true
 rank: 2

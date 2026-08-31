@@ -6,7 +6,9 @@ description: "The questions I use to structure reviews of industrial equipment, 
 collection: portfolio
 date: 2026-08-30
 lang: en
-category: security
+portfolio_categories:
+  - security-audits
+  - industrial-systems
 study_type: "Professional experience · Methodology"
 rank: 3
 ---

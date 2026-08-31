@@ -6,7 +6,8 @@ description: "Development of DoctorPDF: local PDF processing, device licensing a
 collection: portfolio
 date: 2026-08-12
 lang: en
-category: security
+portfolio_categories:
+  - software-engineering-writing
 study_type: "Software project · Desktop engineering"
 rank: 4
 link: "https://github.com/kmanu225/DoctorPDF/releases"

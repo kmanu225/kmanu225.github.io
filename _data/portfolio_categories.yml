@@ -1,0 +1,12 @@
+- id: security-audits
+  title: Security audits
+  icon: shield
+- id: industrial-systems
+  title: Industrial systems
+  icon: factory
+- id: cryptography
+  title: Cryptography
+  icon: key
+- id: software-engineering-writing
+  title: Software Engineering & writing
+  icon: code

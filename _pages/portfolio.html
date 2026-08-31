@@ -3,10 +3,25 @@ layout: archive
 title: "Projects & contributions"
 kicker: "Portfolio"
 permalink: /portfolio/
-description: "Protocol contributions, personal labs and software projects."
+description: "Security audits, industrial systems, cryptography, software engineering and writing."
 lang: en
 ---
-<div class="case-grid">{% assign studies = site.portfolio | sort: 'rank' %}{% for study in studies %}{% if study.category == 'security' %}{% include case-card.html study=study %}{% endif %}{% endfor %}</div>
-<h2 class="section-label">Client & community projects</h2>
-<div class="case-grid">{% for study in studies %}{% unless study.category == 'security' %}{% include case-card.html study=study %}{% endunless %}{% endfor %}</div>
+{% assign studies = site.portfolio | sort: 'rank' %}
+<nav class="portfolio-navigation" aria-label="Project categories">
+  {% for category in site.data.portfolio_categories %}
+  <a href="#{{ category.id }}">{% include icon.html name=category.icon %} {{ category.title | escape }}</a>
+  {% endfor %}
+</nav>
+{% for category in site.data.portfolio_categories %}
+<section class="portfolio-category" aria-labelledby="{{ category.id }}">
+  <h2 id="{{ category.id }}" class="section-label">{% include icon.html name=category.icon %} {{ category.title | escape }}</h2>
+  <div class="case-grid">
+    {% for study in studies %}
+      {% if study.portfolio_categories contains category.id %}
+        {% include case-card.html study=study %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
 <p class="scope-note">Client findings and internal architectures are kept confidential.</p>

@@ -3,12 +3,12 @@
     <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Emmanuel Konan — Home">
       <span class="monogram" aria-hidden="true">ek<span>.</span></span><span>Emmanuel Konan</span>
     </a>
-    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu {% include icon.html name="menu" class="menu-icon" %}{% include icon.html name="close" class="close-icon" %}</button>
     <nav id="primary-nav" aria-label="Main navigation">
       {% for link in site.data.navigation.main %}
-      <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% elsif link.collection and page.collection == link.collection %} aria-current="page"{% elsif page.url == '/' and link.url == '/#expertise' %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% elsif link.collection and page.collection == link.collection %} aria-current="page"{% elsif page.url == '/' and link.url == '/#expertise' %} aria-current="page"{% endif %}>{% include icon.html name=link.icon %}{{ link.title }}</a>
       {% endfor %}
-      <a class="nav-contact" href="https://{{ site.author.gravatar }}">Contact <span aria-hidden="true">↗</span></a>
+      <a class="nav-contact" href="https://{{ site.author.gravatar }}">{% include icon.html name="mail" %} Contact</a>
     </nav>
   </div>
 </header>
