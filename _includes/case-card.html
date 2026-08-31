@@ -3,5 +3,5 @@
   <p class="eyebrow">{{ study.study_type | default: 'Engineering project' }}</p>
   <h3><a href="{{ study.url | relative_url }}">{{ study.card_title | default: study.title }}</a></h3>
   <p>{{ study.excerpt | strip_html }}</p>
-  <a class="text-link" href="{{ study.url | relative_url }}">Read case study<span class="visually-hidden">: {{ study.card_title | default: study.title }}</span> <span aria-hidden="true">↗</span></a>
+  <a class="text-link" href="{{ study.url | relative_url }}">Read more<span class="visually-hidden">: {{ study.card_title | default: study.title }}</span> <span aria-hidden="true">↗</span></a>
 </article>

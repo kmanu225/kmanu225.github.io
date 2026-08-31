@@ -12,18 +12,8 @@ redirect_from:
   - /blog-post-2/
 ---
 
-## Why start with the mathematics?
+This first part of my elliptic-curve series introduces the mathematical objects and geometric intuition. The second part moves to finite fields.
 
-Elliptic-curve cryptography builds protocols on mathematical structures with efficient operations and computationally difficult inverse problems. Understanding that foundation helps explain how relatively compact keys can support public-key operations.
+Elliptic-curve cryptography uses mathematical structures where some operations are efficient but the corresponding inverse problems are computationally difficult. This allows relatively compact public keys. Comparisons with RSA need to use equivalent security levels, not equal key lengths.
 
-Comparisons with RSA require equivalent security levels; equal key lengths do not imply equal security.
-
-## What this introduction covers
-
-This is the first part of my series on elliptic curves. It introduces the objects and geometric intuition before the second part moves to finite fields.
-
-## From theory to engineering
-
-The mathematics is only a starting point. A deployed system also needs appropriate parameters, validated inputs and carefully implemented operations.
-
-For applied work, I would separate the choice of cryptographic scheme from implementation assurance and key lifecycle management. An introductory derivation should not become a production cryptographic library.
+The guide focuses on the mathematics. Implementations also need appropriate parameters, input validation and protection against side channels.

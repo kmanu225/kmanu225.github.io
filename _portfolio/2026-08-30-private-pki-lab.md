@@ -1,8 +1,8 @@
 ---
-title: "Private PKI: from certificate authority to service integration"
+title: "Private PKI lab with Step-CA"
 card_title: "Private PKI lab"
-excerpt: "A practical learning guide connecting a private certificate authority, ACME and TLS with key protection and operational questions."
-description: "Emmanuel Konan’s private PKI lab: certificate authority deployment, ACME and TLS integration, with clear production-readiness boundaries."
+excerpt: "A personal lab for setting up Step-CA, issuing certificates with ACME and configuring a client service."
+description: "A Debian-based Step-CA lab covering certificate issuance, service configuration and client integration."
 collection: portfolio
 date: 2026-08-30
 lang: en
@@ -11,53 +11,25 @@ study_type: "Personal lab · PKI engineering"
 featured: true
 rank: 2
 link: "https://kmanu225.gitbook.io/cs/cryptography/pki/pki-demo"
-link_label: "Explore the PKI guide on GitBook"
+link_label: "Read the PKI guide on GitBook"
 ---
 
-## At a glance
+I wrote a guide to setting up a private certificate authority with Step-CA and connecting it to a client service. It uses separate Debian-based CA and client environments.
 
-**Context:** understanding how certificates are issued and consumed in a private trust environment.
+This is a personal learning lab, not a client deployment.
 
-**My role:** author of a practical PKI deployment guide in my technical knowledge base.
+## Steps covered
 
-**Deliverable:** a walkthrough using Step-CA, Linux services and certificate automation.
+1. Prepare the CA and client environments.
+2. Initialize the private CA with Step-CA.
+3. Configure a service account, file ownership and systemd service.
+4. Enable ACME for automated certificate issuance.
+5. Configure the client service to use the private trust chain.
 
-**Scope:** a learning environment, not a client deployment or a production-certified architecture.
+The commands and configuration are in the GitBook guide linked below.
 
-## The problem
+## Before using it in production
 
-Cryptographic primitives do not, on their own, establish operational trust. Services need identities, relying parties need trusted roots, and certificates need a manageable lifecycle.
+The lab does not cover a production HSM deployment. A production design would also need to address root and intermediate CA separation, issuer authorization, renewal, revocation, monitoring, backup and recovery.
 
-The lab connects these elements through a small private PKI and TLS integration rather than treating certificates as isolated files.
-
-## The approach
-
-1. Prepare separate Debian-based certificate-authority and client environments.
-2. Initialize a private CA with Step-CA.
-3. Configure a dedicated service account, file ownership and service execution.
-4. Enable the ACME provisioner for automated certificate issuance.
-5. Integrate a client service with the private trust environment.
-
-The linked guide provides the implementation material. This page explains the architectural intent and review boundaries.
-
-## Deliverable and learning outcome
-
-The guide brings together CA setup, certificate issuance and service integration in a single learning path. It connects my writing on digital certificates, PKI foundations, HSMs and PKCS#11.
-
-No quantitative availability, performance or security improvement is claimed for this lab.
-
-## What changes for production
-
-Before reusing the approach in a real environment, review root and intermediate CA separation, certificate policy, issuer authorization, renewal, revocation behavior, monitoring, backup and recovery.
-
-**HSM-backed key protection is a separate design decision.** This lab must not be interpreted as demonstrating a production HSM deployment. A dedicated integration would require evidence about key generation, non-exportability, access controls and recovery procedures.
-
-## Review checklist
-
-- Can the relying party validate the expected trust chain and service identity?
-- Are private keys protected with appropriate permissions and ownership?
-- Does renewal work without relying on a manual step?
-- What happens when a certificate expires or an issuer becomes unavailable?
-- Is the chosen deployment appropriate to the environment’s threat model?
-
-These are validation questions for anyone reproducing the lab, not a report of production tests.
+When reproducing the lab, check that the client validates the expected service identity and trust chain, that private-key permissions are appropriate, and that renewal works. Also test what happens when a certificate expires or the issuer is unavailable.

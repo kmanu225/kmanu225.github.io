@@ -1,6 +1,6 @@
 ---
 title: "Website Hosting & Deployment"
-excerpt: "Deployed and configured client websites across a range of hosting providers and platforms, including Hostinger, IONOS, Vercel, and Netlify."
+excerpt: "Domain, DNS, TLS and hosting configuration for client websites."
 collection: portfolio
 lang: en
 category: delivery
@@ -9,17 +9,6 @@ study_type: "Client delivery · Hosting"
 date: 2025-09-01
 ---
 
-Handled end-to-end deployment for client websites, including domain and DNS configuration, SSL, and hosting setup across several providers:
+I deployed client websites on Hostinger, IONOS, Vercel and Netlify, handling domain names, DNS, TLS certificates and hosting configuration.
 
-- **Hostinger**
-- **IONOS**
-- **Vercel**
-- **Netlify**
-
-Chose the platform per project based on the site's stack (static site, Jekyll, Next.js) and the client's budget and maintenance needs.
-
-## Delivery perspective
-
-The work connected technical setup with practical client constraints: platform fit, budget and ongoing maintenance.
-
-Each deployment required attention to domain ownership, configuration and handover. This summary does not claim a specific availability level or performance improvement.
+The choice of platform depended on the site's stack (static HTML, Jekyll or Next.js), the client's budget and who would maintain it. The work also included checking domain ownership and handing over the configuration.

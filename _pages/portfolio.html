@@ -1,13 +1,12 @@
 ---
 layout: archive
-title: "Selected work"
-kicker: "Case studies & contributions"
+title: "Projects & contributions"
+kicker: "Portfolio"
 permalink: /portfolio/
-description: "Applied cryptography, security engineering and practical delivery. Each case study makes the context, contribution and boundaries explicit."
+description: "Protocol contributions, personal labs and software projects."
 lang: en
 ---
 <div class="case-grid">{% assign studies = site.portfolio | sort: 'rank' %}{% for study in studies %}{% if study.category == 'security' %}{% include case-card.html study=study %}{% endif %}{% endfor %}</div>
-<h2 class="section-label">Client delivery & community projects</h2>
-<p class="section-intro">Complementary work in requirements gathering, automation, web engineering and deployment.</p>
+<h2 class="section-label">Client & community projects</h2>
 <div class="case-grid">{% for study in studies %}{% unless study.category == 'security' %}{% include case-card.html study=study %}{% endunless %}{% endfor %}</div>
-<p class="scope-note">Professional experience, public contributions and personal labs are identified separately. No confidential client findings or internal architectures are published here.</p>
+<p class="scope-note">Client findings and internal architectures are kept confidential.</p>

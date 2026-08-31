@@ -1,8 +1,8 @@
 ---
-title: "DoctorPDF: local document processing and release engineering"
+title: "DoctorPDF: a desktop PDF tool"
 card_title: "DoctorPDF"
 excerpt: "A desktop PDF tool with local processing, machine-bound licensing and automated release workflows."
-description: "DoctorPDF engineering case study: local processing, desktop distribution and explicit boundaries around privacy and security claims."
+description: "Development of DoctorPDF: local PDF processing, device licensing and Windows/Linux packaging."
 collection: portfolio
 date: 2026-08-12
 lang: en
@@ -13,31 +13,16 @@ link: "https://github.com/kmanu225/DoctorPDF/releases"
 link_label: "View public releases on GitHub"
 ---
 
-## Context
+DoctorPDF is a desktop application I developed for merging, compressing, watermarking, redacting and password-protecting PDFs. Document processing runs on the user's machine.
 
-DoctorPDF is a desktop application for common PDF operations: merging, compression, watermarking, redaction and password protection. Its processing model keeps document operations on the user’s machine instead of requiring a cloud upload.
+## Development and distribution
 
-## My contribution
+I implemented machine-fingerprint licensing, an activation screen and system-clock tamper checks. I also set up Windows x64 and Debian/Linux packaging with GitHub Actions release automation.
 
-I developed the application and its distribution workflow, including machine-fingerprint licensing, an activation screen and system-clock tamper checks.
+Available packages and versions are listed on the release page below.
 
-The project includes Windows x64 and Debian/Linux distribution and GitHub Actions release automation.
+## Security considerations
 
-## Engineering choices
+Local document processing does not establish the privacy of licensing or update behavior. Those paths need separate review.
 
-- **Local document processing:** avoid making a cloud processing service a requirement for core PDF operations.
-- **Desktop distribution:** package the application for users outside the development environment.
-- **Machine-bound licensing:** associate licensing with a device fingerprint.
-- **Release automation:** use CI/CD to make the build and publication workflow repeatable.
-
-## Deliverable
-
-A desktop application with public release artifacts. The release page is the reference for available versions and supported packages.
-
-## Security boundaries
-
-Local processing is a design choice, not a blanket privacy certification. Licensing and update behavior need to be considered separately from the document-processing path.
-
-Redaction also needs independent verification: a visually covered area is not, by itself, evidence that the underlying text has been removed. Release signing, artifact integrity and tamper resistance should be verified against the actual release process.
-
-This case study does not claim an independent audit, quantified privacy improvement or an unbreakable licensing mechanism.
+Redaction needs verification that the underlying text is removed, not just visually covered. Release signing, artifact integrity and licensing tamper resistance also need independent verification.

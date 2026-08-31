@@ -14,15 +14,14 @@ layout: default
   <div class="prose">{{ content }}</div>
   {% if page.guide_url %}
   <aside class="resource-panel" aria-label="Technical guide">
-    <h2>Explore the technical guide</h2>
-    <p>The detailed material is hosted on my GitBook knowledge base. This link opens an external website.</p>
+    <h2>Full guide</h2>
     <a class="button button-primary" href="{{ page.guide_url }}">Read the guide on GitBook <span aria-hidden="true">↗</span></a>
   </aside>
   {% endif %}
-  {% if page.link %}<p class="external-resource"><a class="button button-secondary" href="{{ page.link }}">{{ page.link_label | default: 'View the public resource' }} <span aria-hidden="true">↗</span></a></p>{% endif %}
+  {% if page.link %}<p class="external-resource"><a class="button button-secondary" href="{{ page.link }}">{{ page.link_label | default: 'View the project' }} <span aria-hidden="true">↗</span></a></p>{% endif %}
   {% if page.collection == 'posts' or page.collection == 'portfolio' %}
-  <nav class="document-end" aria-label="Continue exploring">
-    <a href="{% if page.collection == 'posts' %}{{ '/blog-posts/' | relative_url }}{% else %}{{ '/portfolio/' | relative_url }}{% endif %}">← {% if page.collection == 'posts' %}Articles{% else %}Case studies{% endif %}</a>
-    <a href="mailto:{{ site.author.email }}">Discuss this work ↗</a>
+  <nav class="document-end" aria-label="More pages">
+    <a href="{% if page.collection == 'posts' %}{{ '/blog-posts/' | relative_url }}{% else %}{{ '/portfolio/' | relative_url }}{% endif %}">← {% if page.collection == 'posts' %}Articles{% else %}Projects{% endif %}</a>
+    <a href="mailto:{{ site.author.email }}">Email me ↗</a>
   </nav>{% endif %}
 </article>

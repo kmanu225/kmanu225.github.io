@@ -8,7 +8,7 @@
       {% for link in site.data.navigation.main %}
       <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% elsif link.collection and page.collection == link.collection %} aria-current="page"{% elsif page.url == '/' and link.url == '/#expertise' %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {% endfor %}
-      <a class="nav-contact" href="https://{{ site.author.gravatar }}">Get in touch <span aria-hidden="true">↗</span></a>
+      <a class="nav-contact" href="https://{{ site.author.gravatar }}">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>

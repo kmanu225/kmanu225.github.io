@@ -1,8 +1,8 @@
 ---
-title: "Industrial and embedded security: an audit perspective"
-card_title: "OT/IoT security perspective"
-excerpt: "Connecting risk analysis, equipment security and cryptographic dependencies in electricity-distribution environments."
-description: "A non-confidential overview of Emmanuel Konan’s industrial and embedded security experience and audit perspective."
+title: "Auditing industrial and embedded systems"
+card_title: "OT/IoT security audits"
+excerpt: "My work on equipment security and risk analysis in electricity distribution."
+description: "The questions I use to structure reviews of industrial equipment, authentication and key management."
 collection: portfolio
 date: 2026-08-30
 lang: en
@@ -11,35 +11,20 @@ study_type: "Professional experience · Methodology"
 rank: 3
 ---
 
-## Context and experience
+At Enedis and Ornisec, I have worked on cybersecurity for industrial and embedded equipment used in electricity distribution. My tasks have included risk analysis, security specifications, qualification, audits and equipment inventory.
 
-My experience at Enedis and Ornisec includes cybersecurity work on industrial and embedded equipment for electricity distribution. The scope described in my CV covers risk analysis, equipment security specifications, qualification, auditing and inventory/mapping.
+This page describes my general approach. It does not document a specific client audit or disclose internal findings.
 
-This page is a **non-confidential professional perspective**, not an anonymized account of a specific client engagement. It contains no internal architecture, client finding or claimed remediation result.
+## Audit questions
 
-## My areas of contribution
+1. What does the equipment do, and what would a failure affect?
+2. Which interfaces, privileged operations and update paths need review?
+3. How do the identified risks relate to the architecture and configuration?
+4. How is the equipment provisioned, maintained, recovered and retired?
+5. What evidence supports each finding and proposed remediation?
 
-- EBIOS-RM risk analysis and defense-in-depth approaches.
-- Security work involving PKI, HSMs, PKCS#11 and embedded equipment.
-- Technical audit topics spanning architecture, configuration and source code.
-- Earlier work-study experience involving PCB testing and Python/Bash scripting.
+## Authentication and keys
 
-## A practical review sequence
+Reviews involving PKI, HSMs or PKCS#11 include checking where keys are generated and stored, who can use them and how credentials are replaced. These questions span the equipment, firmware and backend services.
 
-The following is a general way to frame the work, rather than a reconstruction of any client’s audit:
-
-1. **Understand the function.** Identify the equipment’s purpose, dependencies, operational constraints and impact of failure.
-2. **Map the trust boundaries.** Separate interfaces, privileged operations, update paths and cryptographic dependencies.
-3. **Relate threats to controls.** Connect the risk analysis to specific architecture and implementation questions.
-4. **Examine lifecycle behavior.** Include provisioning, maintenance, recovery and decommissioning.
-5. **Make recommendations actionable.** Distinguish the observation, evidence, consequence and proposed remediation.
-
-## Where cryptography enters the picture
-
-Authentication and key management cross hardware, firmware and backend boundaries. A review must ask where keys originate, where they are stored, what operations may use them and how credentials are replaced.
-
-This makes cryptographic infrastructure part of the operational architecture, not a separate mathematical layer.
-
-## What can be shared
-
-Public protocol contributions and personal learning material are linked elsewhere on this site. Mission-specific scope, detailed responsibilities and outcomes can only be discussed to the extent permitted by confidentiality obligations.
+My [CV]({{ '/cv/' | relative_url }}) lists the roles and associated responsibilities.

@@ -41,12 +41,12 @@
     "title": "EAP-PSK-256 — Cryptographic protocol contribution",
     "period": "2026",
     "url": "https://datatracker.ietf.org/doc/draft-eap-psk-256/",
-    "text": "Coauthor of an individual Internet-Draft proposing an evolution of EAP-PSK: AES-256, key derivation based on NIST SP 800-108, and contributions from both peer and server randomness. Work in progress; not an RFC or an IETF-endorsed standard."
+    "text": "Coauthor of an individual Internet-Draft targeting quantum-resistant authentication for constrained devices, using pre-shared keys, AES-256 and NIST SP 800-108 key derivation. Work in progress; not an RFC or an IETF-endorsed standard."
   },
   "skills": [
     {
       "title": "Cryptography & digital trust",
-      "text": "PKI, HSM, PKCS#11, digital certificates, EAP, AES and elliptic-curve cryptography."
+      "text": "PKI, HSM, PKCS#11, digital certificates, EAP, AES and elliptic-curve cryptography. Integration of post-quantum cryptography (PQC) algorithms into environments with limited compute and storage resources."
     },
     {
       "title": "Security & risk",

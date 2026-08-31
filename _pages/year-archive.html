@@ -1,14 +1,14 @@
 ---
 layout: archive
 permalink: /blog-posts/
-title: "Technical notes, practical perspective."
-kicker: "Articles & knowledge base"
-description: "Applied cryptography first: key management, authentication, PKI and HSMs. Alongside notes on systems security and engineering."
+title: "Articles"
+kicker: "Blog"
+description: "Notes on cryptography, systems security and engineering, with links to my detailed guides on GitBook."
 lang: en
 redirect_from:
   - /wordpress/blog-posts/
 ---
-<h2 class="section-label">Cryptography & digital trust</h2>
+<h2 class="section-label">Cryptography</h2>
 <div class="article-list">{% for post in site.posts %}{% if post.topic == 'cryptography' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
 <h2 class="section-label">Systems, risk & engineering</h2>
 <div class="article-list">{% for post in site.posts %}{% unless post.topic == 'cryptography' %}{% include article-row.html post=post %}{% endunless %}{% endfor %}</div>

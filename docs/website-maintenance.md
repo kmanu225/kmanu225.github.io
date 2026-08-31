@@ -47,6 +47,12 @@ The browser regression script serves only the generated directory on a loopback 
 
 Screenshots still need human review. Automated accessibility checks do not establish full WCAG conformance. Local tests do not establish production Core Web Vitals or search-engine indexing. Check the deployed site and Search Console separately when available.
 
+## Writing style
+
+Use plain, factual English. Describe what was done, the tools used and the scope of the work. Avoid slogans, self-assessments and generic conclusions repeated across articles. The homepage should introduce the author and point to the work without restating the CV. Avoid featuring the same guide as both a project and an article on the homepage.
+
+Keep specific limitations where readers need them: draft status, coauthorship, lab scope and confidentiality. Do not add a disclaimer about a result the text never suggests. Article summaries should introduce the subject briefly; the shared GitBook link provides access to the full guide.
+
 ## Editorial checks before applying
 
 - Confirm certificate issuing bodies and credential links before adding them; none have been invented.

@@ -1,7 +1,7 @@
 main:
   - title: Expertise
     url: /#expertise
-  - title: Case studies
+  - title: Projects
     url: /portfolio/
     collection: portfolio
   - title: Articles

@@ -1,6 +1,6 @@
 ---
-title: "FICOBA: a data-exposure case study"
-description: "A case-study reading note on access to sensitive financial data and the distinction between incident facts and general security lessons."
+title: "FICOBA: notes on a reported data exposure"
+description: "A public-source reading note on FICOBA, access authorization and incident response. Full note in French."
 date: 2026-02-20
 modified: 2026-08-31
 lang: en
@@ -12,16 +12,6 @@ redirect_from:
   - /blog-post-11/
 ---
 
-## Scope of the note
+My French-language note on GitBook discusses a reported data exposure involving FICOBA and the French tax administration. It is based on public sources, not an investigation I conducted.
 
-My knowledge base includes a case-study note about a reported exposure involving FICOBA and the French tax administration. This page introduces the analytical perspective without reproducing unverified incident details.
-
-## Questions worth examining
-
-An incident review should distinguish confirmed facts, reported allegations and general recommendations. Questions about access authorization, detection, data minimization and response must be tied to evidence rather than inferred from the existence of an exposure.
-
-## Practical perspective
-
-The useful outcome is a defensible account of what is known, what remains uncertain and which controls deserve examination.
-
-This is public-source commentary, not an investigation I conducted or a client engagement. The external knowledge-base entry is the original French-language note; the site summary is in English.
+The note considers access authorization, detection, data minimization and incident response. Confirmed facts, reported allegations and general recommendations need to be distinguished; this summary does not reproduce incident details.

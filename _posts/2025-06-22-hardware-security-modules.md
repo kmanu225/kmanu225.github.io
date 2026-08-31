@@ -1,6 +1,6 @@
 ---
-title: "HSMs: protecting keys beyond the algorithm"
-description: "Key protection, controlled cryptographic operations and the operational boundaries of hardware security modules."
+title: "HSMs: key storage and access"
+description: "How hardware security modules protect keys, and the access and recovery decisions involved."
 date: 2025-06-22
 modified: 2026-08-31
 lang: en
@@ -14,19 +14,13 @@ redirect_from:
   - /blog-post-6/
 ---
 
-## Why key protection matters
+A hardware security module (HSM) stores keys and performs cryptographic operations within a dedicated hardware boundary.
 
-A strong cryptographic algorithm offers little protection if its secret keys can be extracted or used without authorization. A hardware security module places cryptographic operations and key protection behind a dedicated boundary.
+Integration requires decisions about key access and recovery:
 
-## What the architecture must still decide
+- Which keys are generated inside the HSM, imported or exportable?
+- Which applications and operators can use them?
+- How are privileged roles separated and their actions logged?
+- How are keys backed up and recovered when hardware is replaced?
 
-- Which keys are generated inside the boundary, and which may be imported or exported?
-- Which applications and operators may invoke cryptographic operations?
-- How are privileged roles separated and audited?
-- What are the backup, recovery and replacement procedures?
-
-## Practical perspective
-
-An HSM is a component, not a complete security architecture. Its integration, access policy and operational processes remain part of the assurance argument.
-
-The detailed note introduces HSMs in the context of PKI and the chain of trust. It complements my writing on [PKCS#11]({{ '/pkcs11/' | relative_url }}), the interface used by many applications to access cryptographic tokens.
+The guide below introduces HSMs in a PKI. The [PKCS#11 note]({{ '/pkcs11/' | relative_url }}) covers an interface used by applications to access cryptographic tokens.
