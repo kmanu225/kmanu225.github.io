@@ -4,10 +4,10 @@ description: "A practical engineering note on building tools for an ARM environm
 date: 2026-03-17
 modified: 2026-08-31
 lang: en
-topic: systems
-guide_url: https://kmanu225.gitbook.io/cs/system/compilation/cross-compilation
+topic: software-engineering
+guide_url: https://kmanu225.gitbook.io/cs/software-engineering/cross-compilation
 tags:
-  - systems
+  - software-engineering
 redirect_from:
   - /blog-post-12/
 ---

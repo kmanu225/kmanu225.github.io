@@ -2,7 +2,7 @@
 title: 'Notes from the AI Fluency course'
 description: 'Notes on responsible AI use, human review and the difference between automation, augmentation and agency.'
 lang: en
-topic: engineering
+topic: software-engineering
 date: 2026-04-08
 tags:
   - ai

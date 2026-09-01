@@ -7,7 +7,7 @@ collection: portfolio
 date: 2026-08-12
 lang: en
 portfolio_categories:
-  - software-engineering-writing
+  - software-engineering
 study_type: "Software project · Desktop engineering"
 rank: 4
 link: "https://github.com/kmanu225/DoctorPDF/releases"

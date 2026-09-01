@@ -4,10 +4,10 @@ description: "Notes on detecting and removing persistence mechanisms after a Lin
 date: 2025-08-24
 modified: 2026-08-31
 lang: en
-topic: systems
-guide_url: https://kmanu225.gitbook.io/cs/system/linux/security/persistence-mechanisms
+topic: system-security
+guide_url: https://kmanu225.gitbook.io/cs/reference/cheat-sheet/system/linux/security/persistence-mechanisms
 tags:
-  - systems
+  - system-security
 redirect_from:
   - /blog-post-9/
 ---

@@ -7,7 +7,7 @@ collection: portfolio
 date: 2026-08-30
 lang: en
 portfolio_categories:
-  - security-audits
+  - system-security
   - industrial-systems
 study_type: "Professional experience · Methodology"
 rank: 3

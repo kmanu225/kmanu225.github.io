@@ -4,10 +4,10 @@ description: "An overview of cybersecurity references and how to use them when p
 date: 2026-04-06
 modified: 2026-08-31
 lang: en
-topic: risk
-guide_url: https://kmanu225.gitbook.io/cs/governance/cybersecurity-frameworks
+topic: industrial-systems
+guide_url: https://kmanu225.gitbook.io/cs/system-security/cybersecurity-frameworks
 tags:
-  - risk
+  - industrial-systems
 redirect_from:
   - /blog-post-13/
 ---

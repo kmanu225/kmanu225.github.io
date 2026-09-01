@@ -4,10 +4,10 @@ description: "A public-source reading note on FICOBA, access authorization and i
 date: 2026-02-20
 modified: 2026-08-31
 lang: en
-topic: risk
-guide_url: https://kmanu225.gitbook.io/cs/governance/ficoba-dgfip
+topic: system-security
+guide_url: https://kmanu225.gitbook.io/cs/system-security/ficoba-dgfip
 tags:
-  - risk
+  - system-security
 redirect_from:
   - /blog-post-11/
 ---

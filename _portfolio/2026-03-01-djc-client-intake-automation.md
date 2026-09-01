@@ -4,7 +4,7 @@ excerpt: "A Google Apps Script workflow that emails client form responses to the
 collection: portfolio
 lang: en
 portfolio_categories:
-  - software-engineering-writing
+  - software-engineering
 rank: 5
 study_type: "Community project · Automation"
 date: 2026-03-01

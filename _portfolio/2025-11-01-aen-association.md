@@ -4,7 +4,7 @@ excerpt: "An association website built with other AEN members using Hostinger We
 collection: portfolio
 lang: en
 portfolio_categories:
-  - software-engineering-writing
+  - software-engineering
 rank: 7
 study_type: "Community project · Web delivery"
 date: 2025-11-01
