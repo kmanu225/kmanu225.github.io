@@ -5,7 +5,7 @@ date: 2025-06-09
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-foundation
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-foundations
 tags:
   - cryptography
 redirect_from:

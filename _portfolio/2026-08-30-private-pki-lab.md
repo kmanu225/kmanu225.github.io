@@ -11,7 +11,7 @@ portfolio_categories:
 study_type: "Personal lab · PKI engineering"
 featured: true
 rank: 2
-link: "https://kmanu225.gitbook.io/cs/cryptography/pki/pki-demo"
+link: "https://kmanu225.gitbook.io/cs/cryptography/pki/private-pki-with-step-ca"
 link_label: "Read the PKI guide on GitBook"
 ---
 
