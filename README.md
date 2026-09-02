@@ -1,21 +1,21 @@
 # kmanu225.github.io
 
-Personal website of **Emmanuel Konan** — portfolio and blog, built with [Jekyll](https://jekyllrb.com/) on top of the [Academic Pages](https://academicpages.github.io/) theme, hosted on GitHub Pages.
+Personal website of **Emmanuel Konan** - portfolio and blog, built with [Jekyll](https://jekyllrb.com/) on top of the [Academic Pages](https://academicpages.github.io/) theme, hosted on GitHub Pages.
 
 The site features two custom "hacker" themes (Matrix-style green-on-black and a light variant), configurable via `site_theme` in `_config.yml`.
 
 ## Content
 
-- `_posts/` — blog posts
-- `_portfolio/` — project portfolio entries
-- `_publications/`, `_talks/`, `_teaching/` — academic collections (currently unused, kept for future content)
-- `_pages/` — static pages (e.g. `about.md`)
-- `_data/cv.json` — CV/resume data (JSON Resume format)
-- `images/`, `files/` — static assets and downloadable files (PDFs, etc.)
+- `_posts/` - blog posts
+- `_portfolio/` - project portfolio entries
+- `_publications/`, `_talks/`, `_teaching/` - academic collections (currently unused, kept for future content)
+- `_pages/` - static pages (e.g. `about.md`)
+- `_data/cv.json` - CV/resume data (JSON Resume format)
+- `images/`, `files/` - static assets and downloadable files (PDFs, etc.)
 
 ## Running locally
 
-### Option A — Ruby/Jekyll directly
+### Option A - Ruby/Jekyll directly
 
 Requirements: Ruby (3.x), Bundler, Node.js.
 
@@ -42,9 +42,9 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 ```
 
-> `_config.yml` is **not** hot-reloaded — restart `jekyll serve` after editing it.
+> `_config.yml` is **not** hot-reloaded - restart `jekyll serve` after editing it.
 
-### Option B — Docker
+### Option B - Docker
 
 No local Ruby/Node install needed:
 
@@ -66,11 +66,11 @@ npm run watch:js    # rebuild automatically on change
 
 ## Generating content in bulk
 
-The `markdown_generator/` directory has Python/Jupyter tools to turn TSV or BibTeX files into `_publications/` or `_talks/` markdown files. Run them from within that directory — see the scripts/notebooks for the expected columns.
+The `markdown_generator/` directory has Python/Jupyter tools to turn TSV or BibTeX files into `_publications/` or `_talks/` markdown files. Run them from within that directory - see the scripts/notebooks for the expected columns.
 
 ## Deployment
 
-The site auto-builds and deploys from the `master` branch via GitHub Pages — no manual deployment step needed. Push to `master` and check **Settings → Pages** in the repo for build status.
+The site auto-builds and deploys from the `master` branch via GitHub Pages - no manual deployment step needed. Push to `master` and check **Settings → Pages** in the repo for build status.
 
 ## Credits
 

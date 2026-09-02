@@ -41,7 +41,7 @@ styles = {
     "bullet": ParagraphStyle("bullet", fontName="CV", fontSize=9.3, leading=13.6, textColor=ink, leftIndent=9, firstLineIndent=-9, spaceAfter=5),
 }
 def clean(text):
-    return escape(text.replace("—", "-").replace("–", "-").replace("\u2011", "-"))
+    return escape(text.replace("\u2014", "-").replace("–", "-").replace("\u2011", "-"))
 def p(text, style="body"):
     return Paragraph(clean(text), styles[style])
 def link(label, url):

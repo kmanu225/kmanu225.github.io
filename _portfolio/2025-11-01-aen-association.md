@@ -1,5 +1,5 @@
 ---
-title: "AEN Association — Website Design"
+title: "AEN Association - Website Design"
 excerpt: "An association website built with other AEN members using Hostinger Website Builder."
 collection: portfolio
 lang: en
