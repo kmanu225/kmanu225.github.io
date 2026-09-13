@@ -12,6 +12,7 @@ redirect_from:
   - /blog-post-11/
 ---
 
-My French-language note on GitBook discusses a reported data exposure involving FICOBA and the French tax administration. It is based on public sources, not an investigation I conducted.
+The FICOBA data breach raises a simple but uncomfortable question: **if the government cannot adequately protect the sensitive data it collects, who is really protecting citizens?**
 
-The note considers access authorization, detection, data minimization and incident response. Confirmed facts, reported allegations and general recommendations need to be distinguished; this summary does not reproduce incident details.
+I break down what happened, what was exposed, and what this means for all of us in the full article below.
+

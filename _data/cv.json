@@ -1,64 +1,59 @@
 {
   "name": "Emmanuel Konan",
-  "headline": "Cybersecurity Consultant | Applied Cryptography & IT/OT/IoT Security",
+  "headline": "Cybersecurity Engineer",
   "location": "France",
   "email": "emmanuel.konan.contact@gmail.com",
   "linkedin": "https://www.linkedin.com/in/emmanuel-konan",
   "github": "https://github.com/kmanu225",
   "website": "https://kmanu225.github.io",
-  "summary": "CentraleSupélec engineer working on technical security audits, industrial and embedded systems, and cryptographic infrastructure. Experience with PKI/HSM, PKCS#11, EBIOS-RM risk analysis and ISO/IEC 27001 internal audits. Coauthor of the EAP-PSK-256 Internet-Draft.",
+  "summary": "Cybersecurity consultant specialized in IT, OT and IoT security, with experience in risk analysis, security audits, industrial systems and embedded security. I have worked across the energy, financial, public and IT/software sectors, combining technical expertise with cybersecurity governance and risk management.",
   "experience": [
     {
       "role": "Auditor & Cybersecurity Consultant - IT/OT/IoT",
       "organization": "Ornisec",
       "period": "2024–Present",
+      "summary": "Cybersecurity consultant working across public/administrative organizations, financial institutions, energy companies and IT/software companies, covering risk management, technical audits, industrial cybersecurity and compliance.",
       "bullets": [
-        "Conduct risk analyses using EBIOS-RM and contribute to architecture, configuration, source-code, organizational and physical security audits in PASSI engagements.",
-        "Perform internal ISO/IEC 27001 audits and work on security specifications, qualification and audits of industrial and embedded equipment.",
-        "Act as a cybersecurity referent for OT/IoT equipment at Enedis, with work spanning PKI/HSM, PKCS#11, cryptography and equipment inventory/mapping."
+        "Lead EBIOS-RM risk analyses and facilitate workshops with business and technical stakeholders.",
+        "Perform PASSI security audits covering architecture, configuration, source code, organizational and physical security.",
+        "Conduct internal ISO/IEC 27001 audits, assessing controls, governance and ISMS effectiveness.",
+        "Support clients on regulatory compliance, running NIS2 gap analyses and remediation roadmaps, and assessing AI Act obligations for AI-enabled systems.",
+        "Define security requirements and conduct qualification and audits of industrial, embedded and connected equipment.",
+        "Act as cybersecurity referent for OT/IoT equipment at Enedis, advising on PKI/HSM, PKCS#11, cryptographic mechanisms and asset mapping.",
+        "Participate in the preparation and facilitation of cybersecurity crisis exercises, testing incident response, coordination and decision-making.",
+        "Design and deliver cybersecurity training to client companies, covering technical, governance and awareness topics for both expert and non-expert audiences.",
+        "Deliver cybersecurity engagements across administrative, financial, energy and IT/software environments.",
+        "Integration of post-quantum cryptography (PQC) algorithms into environments with limited compute and storage resources.",
+        "Led the firm's AI adoption initiative, identifying use cases and supporting secure integration into consulting workflows."
       ]
     },
     {
-      "role": "Embedded Systems Cybersecurity Audit - Work-study",
+      "role": "IT/OT Cybersecurity Engineer - Work-study",
       "organization": "Enedis",
-      "period": "2023–2024",
+      "period": "Sep 2023 – Sep 2024",
+      "summary": "Worked within a multidisciplinary team of cybersecurity experts on the security of embedded systems, smart metering and critical infrastructure.",
       "bullets": [
-        "Worked on embedded-system security for the electricity distribution network, combining risk analysis with a defense-in-depth approach.",
-        "Contributed to work involving HSMs, PCB penetration testing, power-line communication, and Python/Bash scripting."
+        "Assessed security risks and threat models related to security modules embedded in industrial systems.",
+        "Analyzed defense-in-depth architectures, hardware security (CPU, memory, buses) and potential vulnerabilities.",
+        "Conducted research on cryptographic mechanisms, SSH protocols (RFC 4250-4254), PLC and ISO/IEC 7816 smart-card standards.",
+        "Performed vulnerability research and penetration-testing activities on embedded environments.",
+        "Modified the OpenSSH client in C for custom security testing and information gathering.",
+        "Developed Python and Bash scripts to automate security testing and analysis."
       ]
     },
     {
-      "role": "Losses & Fraud Project Manager - Work-study",
+      "role": "Non-Technical Losses Project Manager - Work-study",
       "organization": "Enedis",
-      "period": "2021–2023",
+      "period": "Oct 2021 – Aug 2023",
+      "summary": "Worked within Enedis' B2B division on initiatives aimed at reducing non-technical losses and electricity fraud, combining data analysis, project management and operational coordination.",
       "bullets": [
-        "Implemented data-informed procedures addressing non-technical losses and electricity consumption fraud; created Excel/VBA KPIs for operational monitoring.",
-        "Followed the Data Protection Impact Assessment as a business owner and drafted personal-data passports for the DPO as a business analyst."
+        "Performed data mining and consumption analysis to identify potential fraud and abnormal electricity usage.",
+        "Automated monthly reporting and KPIs using VBA, improving performance monitoring.",
+        "Managed a national project introducing a new feature within the electricity distribution network.",
+        "Conducted security and compliance assessments of internal business tools.",
+        "Supported the development of Enedis' B2B strategic plan and internal awareness initiatives.",
+        "Completed a field immersion with operational technicians, gaining practical knowledge of electricity distribution, non-technical losses and the French energy market."
       ]
-    }
-  ],
-  "contribution": {
-    "title": "EAP-PSK-256 - Cryptographic protocol contribution",
-    "period": "2026",
-    "url": "https://datatracker.ietf.org/doc/draft-eap-psk-256/",
-    "text": "Coauthor of an individual Internet-Draft targeting quantum-resistant authentication for constrained devices, using pre-shared keys, AES-256 and NIST SP 800-108 key derivation. Work in progress; not an RFC or an IETF-endorsed standard."
-  },
-  "skills": [
-    {
-      "title": "Cryptography & digital trust",
-      "text": "PKI, HSM, PKCS#11, digital certificates, EAP, AES and elliptic-curve cryptography. Integration of post-quantum cryptography (PQC) algorithms into environments with limited compute and storage resources."
-    },
-    {
-      "title": "Security & risk",
-      "text": "IT/OT/IoT security, technical audits, EBIOS-RM, ISO/IEC 27001, defense in depth."
-    },
-    {
-      "title": "Systems & engineering",
-      "text": "Linux (RHEL, Debian, Rocky), Active Directory, C, Python, Bash, Java, Docker/Podman, GitHub Actions."
-    },
-    {
-      "title": "Additional tools",
-      "text": "SQL, R, Excel/VBA, Proxmox/LXC, Jenkins, Kubernetes, Flask and React."
     }
   ],
   "education": [
@@ -66,10 +61,10 @@
       "title": "Engineering Degree - Computer Science & Cybersecurity",
       "organization": "CentraleSupélec",
       "period": "2021–2024",
-      "text": "General engineering curriculum spanning computer science, cybersecurity, electronics, data/AI and management."
+      "text": "GPA 4.23/5.0. General engineering curriculum spanning computer science, cybersecurity, electronics, data/AI and management."
     },
     {
-      "title": "Visiting Student - Advanced Hardware Protection, Master 2 curriculum",
+      "title": "Advanced Hardware Security - Master 2 coursework",
       "organization": "Université de Rennes",
       "period": "2023–2024",
       "text": "Coursework in embedded-system attacks, including side channels, glitching and JTAG."
@@ -78,7 +73,13 @@
       "title": "Preparatory Classes - PTSI/PT",
       "organization": "Saint Aubin La Salle",
       "period": "2019–2021",
-      "text": "Mathematics, physics and engineering sciences."
+      "text": "Mathematics, physics and engineering sciences. Ranked first of the class, highest honors."
+    },
+    {
+      "title": "Baccalauréat Série C - Mathematics & Physics/Chemistry",
+      "organization": "Lycée Classique d'Abidjan, Côte d'Ivoire",
+      "period": "2016–2019",
+      "text": "Graduated with honors (Mention Bien). Ranked first of the class."
     }
   ],
   "certifications": [
@@ -91,19 +92,60 @@
       "year": "2025"
     }
   ],
+  "contribution": {
+    "title": "EAP-PSK-256 - Cryptographic protocol contribution",
+    "period": "2026",
+    "url": "https://datatracker.ietf.org/doc/draft-eap-psk-256/",
+    "text": "Coauthor of an individual Internet-Draft targeting quantum-resistant authentication for constrained devices, using pre-shared keys, AES-256 and NIST SP 800-108 key derivation. Work in progress; not an RFC or an IETF-endorsed standard."
+  },
+  "skillsIntro": "Throughout my personal, professional and associative experiences, I have developed strong interpersonal and organizational skills, including:",
+  "skills": [
+    {
+      "title": "Leadership & motivation",
+      "text": "Ability to inspire, engage and motivate people around me."
+    },
+    {
+      "title": "Proactivity & initiative",
+      "text": "Comfortable taking ownership and acting without waiting to be asked."
+    },
+    {
+      "title": "Solution-oriented mindset",
+      "text": "I approach challenges with determination and the belief that obstacles can be overcome."
+    },
+    {
+      "title": "Problem-solving",
+      "text": "Resourceful approach to challenges and ability to find practical solutions."
+    },
+    {
+      "title": "Adaptability",
+      "text": "Quick to adjust to new environments, responsibilities and unexpected situations."
+    },
+    {
+      "title": "Time management & organization",
+      "text": "Able to prioritize effectively and manage multiple responsibilities."
+    }
+  ],
   "leadership": [
     {
       "title": "African Engineers Network - Business Development Lead & IT Consultant",
+      "url": "https://aenassociation.org/",
       "period": "2024–Present",
       "text": "Client needs qualification, technical and commercial proposals, project scoping, client relations and web delivery within the advisory initiative."
     },
     {
       "title": "Elit Club - Digital Club Member",
+      "url": "https://www.linkedin.com/company/elit-asso/",
       "period": "2025–Present",
       "text": "Webinar preparation and IT/cybersecurity outreach supporting access to digital skills in Africa."
     },
     {
+      "title": "Superprof - Private Tutor",
+      "period": "2022–2024",
+      "text": "Computer science and mathematics tutoring for high-school and university students."
+    },
+    {
       "title": "Rézo Metz-Rennes Fédérés - Treasurer & IT Support",
+      "url": "https://rezo-rm.fr/",
       "period": "2021–2024",
       "text": "Contributed to campus network maintenance and IT services across Wi-Fi, Ethernet and fiber."
     }
