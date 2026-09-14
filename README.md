@@ -28,10 +28,25 @@ sudo apt-get install -y ruby3.2-dev build-essential
 
 (Use the `-dev` package matching your installed Ruby version, e.g. `ruby3.2-dev`; check with `ruby -v`.)
 
-```bash
+**Windows:**
+
+Install Ruby (with the MSYS2/DevKit toolchain needed to build native gem extensions) via [RubyInstaller](https://rubyinstaller.org/downloads/) - pick the "WITH DEVKIT" version. During setup, when prompted, run the `ridk install` step and select the MSYS2 base installation option.
+
+Then, in a terminal (PowerShell or Command Prompt):
+
+```powershell
+gem install bundler
 bundle install
 bundle exec jekyll serve -l -H localhost
 ```
+
+If `bundle install` fails with `make failed` / `No such file or directory - make` while building a native extension (e.g. `RedCloth`, `fast-stemmer`, `posix-spawn`, `yajl-ruby`, `redcarpet`, `racc`), the MSYS2/MinGW toolchain isn't installed. Fix it by running:
+
+```powershell
+ridk install
+```
+
+and choosing option **3** (MSYS2 and MINGW development toolchain) when prompted. Then re-run `bundle install`. If `ridk` isn't recognized at all, you installed the plain Ruby package instead of "WITH DEVKIT" - reinstall from [RubyInstaller](https://rubyinstaller.org/downloads/) using the DEVKIT variant.
 
 The site is served at `http://localhost:4000` with livereload on port `35729`. `-l` enables livereload so the browser refreshes automatically on file changes.
 
