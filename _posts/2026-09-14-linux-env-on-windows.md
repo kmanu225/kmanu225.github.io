@@ -37,6 +37,7 @@ The [full introduction](https://kmanu225.gitbook.io/cs/software-engineering/unix
 * [**WSL**](https://kmanu225.gitbook.io/cs/software-engineering/unix-linux-on-windows-choosing-the-right-environment/wsl-a-real-linux-environment-inside-windows): a real Linux environment integrated with Windows.
 * [**Docker and containers**](https://kmanu225.gitbook.io/cs/software-engineering/unix-linux-on-windows-choosing-the-right-environment/docker-and-containers-reproducible-linux-environments-on-windows): isolated, reproducible Linux environments.
 * [**Virtual machines**](https://kmanu225.gitbook.io/cs/software-engineering/unix-linux-on-windows-choosing-the-right-environment/virtual-machines-run-a-complete-linux-system-on-windows): a complete, independent Linux system.
+* [**QEMU**](https://kmanu225.gitbook.io/cs/software-engineering/unix-linux-on-windows-choosing-the-right-environment/qemu-virtualization-and-hardware-emulation-on-windows): virtualization and hardware emulation, including other CPU architectures.
 * [**Remote Linux development**](https://kmanu225.gitbook.io/cs/software-engineering/unix-linux-on-windows-choosing-the-right-environment/remote-linux-development-use-linux-somewhere-else): use a real Linux machine elsewhere.
 
 ![Linux on Windows](/images/linux-on-windows.png)
