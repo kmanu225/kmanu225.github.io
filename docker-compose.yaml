@@ -1,6 +1,7 @@
 services:
   jekyll-site:
     image: jekyll-site
+    container_name: kmanu225-site
     build: .
 
     volumes:
