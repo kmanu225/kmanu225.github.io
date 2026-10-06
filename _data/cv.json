@@ -102,29 +102,23 @@
     "title": "EAP-PSK-256 - Cryptographic protocol contribution",
     "period": "2026",
     "url": "https://datatracker.ietf.org/doc/draft-eap-psk-256/",
-    "text": "Coauthor of an individual Internet-Draft targeting quantum-resistant authentication for constrained devices, using pre-shared keys, AES-256 and NIST SP 800-108 key derivation. Work in progress; not an RFC or an IETF-endorsed standard."
+    "text": "Coauthor of an individual Internet-Draft targeting quantum-resistant authentication for constrained devices, using pre-shared keys, AES-256 and NIST SP 800-108 key derivation. (Work in progress)."
   },
-  "skillsIntro": "Throughout my personal, professional and associative experiences, I have developed strong interpersonal and organizational skills, including:",
   "skills": [
     {
-      "title": "Leadership",
-      "text": "Ability to inspire, engage and motivate people around me."
+      "title": "Leadership"
     },
     {
-      "title": "Proactivity",
-      "text": "Comfortable taking ownership and acting without waiting to be asked."
+      "title": "Proactivity"
     },
     {
-      "title": "Solution-oriented mindset",
-      "text": "I approach challenges with determination and the belief that obstacles can be overcome."
+      "title": "Solution-oriented mindset"
     },
     {
-      "title": "Adaptability",
-      "text": "Quick to adjust to new environments, responsibilities and unexpected situations."
+      "title": "Adaptability"
     },
     {
-      "title": "Time management & organization",
-      "text": "Able to prioritize effectively and manage multiple responsibilities."
+      "title": "Time management & organization"
     }
   ],
   "leadership": [
