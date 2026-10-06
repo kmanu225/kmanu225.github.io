@@ -3,35 +3,36 @@
   "headline": "Cybersecurity Engineer",
   "location": "France",
   "email": "emmanuel.konan.contact@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/emmanuel-konan",
+  "linkedin": "https://www.linkedin.com/in/emmanuel-konan/",
   "github": "https://github.com/kmanu225",
-  "website": "https://kmanu225.github.io",
-  "summary": "Cybersecurity consultant specialized in IT, OT and IoT security, with experience in risk analysis, security audits, industrial systems and embedded security. I have worked across the energy, financial, public and IT/software sectors, combining technical expertise with cybersecurity governance and risk management.",
+  "website": "https://kmanu225.github.io/",
+  "summary": "IT/IoT/OT cybersecurity engineer, I work on risk analysis, security audits, industrial systems and embedded security. My career has led me to work across several sectors, notably energy, finance and the public sector, on both technical and cyber risk management issues.",
   "experience": [
     {
       "role": "Auditor & Cybersecurity Consultant - IT/OT/IoT",
       "organization": "Ornisec",
-      "period": "2024–Present",
-      "summary": "Cybersecurity consultant working across public/administrative organizations, financial institutions, energy companies and IT/software companies, covering risk management, technical audits, industrial cybersecurity and compliance.",
+      "url": "https://www.ornisec.com/",
+      "period": "Oct 2024 – Present",
+      "summary": "Cybersecurity consultant and auditor working across public/administrative organizations, financial institutions, energy companies and IT/software companies, covering risk management, technical audits, industrial cybersecurity and compliance.",
       "bullets": [
-        "Lead EBIOS-RM risk analyses and facilitate workshops with business and technical stakeholders.",
-        "Perform PASSI security audits covering architecture, configuration, source code, organizational and physical security.",
-        "Conduct internal ISO/IEC 27001 audits, assessing controls, governance and ISMS effectiveness.",
-        "Support clients on regulatory compliance, running NIS2 gap analyses and remediation roadmaps, and assessing AI Act obligations for AI-enabled systems.",
-        "Define security requirements and conduct qualification and audits of industrial, embedded and connected equipment.",
-        "Act as cybersecurity referent for OT/IoT equipment at Enedis, advising on PKI/HSM, PKCS#11, cryptographic mechanisms and asset mapping.",
-        "Participate in the preparation and facilitation of cybersecurity crisis exercises, testing incident response, coordination and decision-making.",
+        "Lead [EBIOS-RM](https://cyber.gouv.fr/publications/ebios-risk-manager-method) risk analyses.",
+        "Perform audits covering architecture, organization and governance.",
+        "Conduct internal ISO/IEC 27001 audits.",
+        "Support clients on regulatory compliance (GDPR, NIS, AI Act).",
+        "Participate in the preparation and facilitation of cybersecurity crisis exercises.",
         "Design and deliver cybersecurity training to client companies, covering technical, governance and awareness topics for both expert and non-expert audiences.",
-        "Deliver cybersecurity engagements across administrative, financial, energy and IT/software environments.",
-        "Integration of post-quantum cryptography (PQC) algorithms into environments with limited compute and storage resources.",
-        "Led the firm's AI adoption initiative, identifying use cases and supporting secure integration into consulting workflows."
+        "Lead the firm's AI adoption initiative, identifying use cases and supporting their secure integration into consulting activities.",
+        "Act as cybersecurity referent for connected devices at [Enedis](https://www.enedis.fr/).",
+        "Define security requirements and conduct qualification and audits of industrial, embedded and connected equipment.",
+        "Integrate post-quantum cryptography (PQC) algorithms into environments with limited compute and storage resources."
       ]
     },
     {
       "role": "IT/OT Cybersecurity Engineer - Work-study",
       "organization": "Enedis",
+      "url": "https://www.enedis.fr/",
       "period": "Sep 2023 – Sep 2024",
-      "summary": "Worked within a multidisciplinary team of cybersecurity experts on the security of embedded systems, smart metering and critical infrastructure.",
+      "summary": "Within a multidisciplinary cybersecurity team, I worked on the security of embedded systems, smart metering and critical infrastructure.",
       "bullets": [
         "Assessed security risks and threat models related to security modules embedded in industrial systems.",
         "Analyzed defense-in-depth architectures, hardware security (CPU, memory, buses) and potential vulnerabilities.",
@@ -44,13 +45,14 @@
     {
       "role": "Non-Technical Losses Project Manager - Work-study",
       "organization": "Enedis",
+      "url": "https://www.enedis.fr/",
       "period": "Oct 2021 – Aug 2023",
-      "summary": "Worked within Enedis' B2B division on initiatives aimed at reducing non-technical losses and electricity fraud, combining data analysis, project management and operational coordination.",
+      "summary": "Within Enedis' B2B division, my work focused on reducing non-technical losses and fighting electricity fraud.",
       "bullets": [
         "Performed data mining and consumption analysis to identify potential fraud and abnormal electricity usage.",
         "Automated monthly reporting and KPIs using VBA, improving performance monitoring.",
         "Managed a national project introducing a new feature within the electricity distribution network.",
-        "Conducted security and compliance assessments of internal business tools.",
+        "Conducted security and compliance assessments of internal business tools ([DPIA](https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd)).",
         "Supported the development of Enedis' B2B strategic plan and internal awareness initiatives.",
         "Completed a field immersion with operational technicians, gaining practical knowledge of electricity distribution, non-technical losses and the French energy market."
       ]
@@ -79,16 +81,20 @@
       "title": "Baccalauréat Série C - Mathematics & Physics/Chemistry",
       "organization": "Lycée Classique d'Abidjan, Côte d'Ivoire",
       "period": "2016–2019",
-      "text": "Graduated with honors (Mention Bien). Ranked first of the class."
+      "text": "Baccalauréat (Mention Bien). Ranked first of the class (10th – 12th grade)."
     }
   ],
   "certifications": [
     {
-      "title": "ISO 27001 Lead Auditor",
+      "title": "[ANSSI](https://cyber.gouv.fr/offre-de-service/solutions-certifiees-et-qualifiees/comprendre-levaluation-de-securite/qualification-de-produit-et-services/referentiels-qualification/) PASSI Qualified Auditor - organizational and physical audit",
       "year": "2026"
     },
     {
-      "title": "eJPT",
+      "title": "[PECB](https://www.credly.com/badges/b9b4beba-a257-4e1a-adf1-17b8a7a4f22e/public_url) ISO 27001 Lead Auditor",
+      "year": "2026"
+    },
+    {
+      "title": "[eJPT](https://certs.ine.com/1fb25060-80dd-4161-8e13-f96b4d74f7c4#acc.KumnvyhU)",
       "year": "2025"
     }
   ],
@@ -101,20 +107,16 @@
   "skillsIntro": "Throughout my personal, professional and associative experiences, I have developed strong interpersonal and organizational skills, including:",
   "skills": [
     {
-      "title": "Leadership & motivation",
+      "title": "Leadership",
       "text": "Ability to inspire, engage and motivate people around me."
     },
     {
-      "title": "Proactivity & initiative",
+      "title": "Proactivity",
       "text": "Comfortable taking ownership and acting without waiting to be asked."
     },
     {
       "title": "Solution-oriented mindset",
       "text": "I approach challenges with determination and the belief that obstacles can be overcome."
-    },
-    {
-      "title": "Problem-solving",
-      "text": "Resourceful approach to challenges and ability to find practical solutions."
     },
     {
       "title": "Adaptability",
@@ -127,26 +129,26 @@
   ],
   "leadership": [
     {
-      "title": "African Engineers Network - Business Development Lead & IT Consultant",
-      "url": "https://aenassociation.org/",
-      "period": "2024–Present",
-      "text": "Client needs qualification, technical and commercial proposals, project scoping, client relations and web delivery within the advisory initiative."
-    },
-    {
       "title": "Elit Club - Digital Club Member",
-      "url": "https://www.linkedin.com/company/elit-asso/",
-      "period": "2025–Present",
+      "url": "https://www.elitasso.com/",
+      "period": "Jan 2025 – Present",
       "text": "Webinar preparation and IT/cybersecurity outreach supporting access to digital skills in Africa."
     },
     {
+      "title": "African Engineers Network - Business Development Lead & IT Consultant",
+      "url": "https://aenassociation.org/",
+      "period": "Dec 2024 – Present",
+      "text": "Client needs qualification, technical and commercial proposals, project scoping, client relations and web delivery within the advisory initiative."
+    },
+    {
       "title": "Superprof - Private Tutor",
-      "period": "2022–2024",
+      "period": "Jan 2022 – Jun 2024",
       "text": "Computer science and mathematics tutoring for high-school and university students."
     },
     {
       "title": "Rézo Metz-Rennes Fédérés - Treasurer & IT Support",
       "url": "https://rezo-rm.fr/",
-      "period": "2021–2024",
+      "period": "Sep 2021 – Sep 2024",
       "text": "Contributed to campus network maintenance and IT services across Wi-Fi, Ethernet and fiber."
     }
   ],

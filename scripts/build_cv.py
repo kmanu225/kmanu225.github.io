@@ -369,6 +369,15 @@ def link_markup(label, url):
     return f'<link href="{escape(str(url))}" color="{ACCENT_HEX}">{clean(label)}</link>'
 
 
+MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+
+
+def md(text):
+    """Escape CV data, turning its [label](url) links into PDF links."""
+    return MD_LINK.sub(
+        lambda m: f'<link href="{m.group(2)}" color="{ACCENT_HEX}">{m.group(1)}</link>', clean(text))
+
+
 def section_heading(text, icon_name, *follow):
     """All-caps heading over a full-width rule - the McKinsey scanning anchor.
 
@@ -406,7 +415,7 @@ def bullet_markup(markup):
 
 
 def bullet(text):
-    return bullet_markup(clean(text))
+    return bullet_markup(md(text))
 
 
 def span_period(periods):
@@ -449,7 +458,7 @@ def group_by_employer(entries):
         if groups and groups[-1]["organization"] == entry["organization"]:
             groups[-1]["roles"].append(entry)
         else:
-            groups.append({"organization": entry["organization"], "roles": [entry]})
+            groups.append({"organization": entry["organization"], "url": entry.get("url"), "roles": [entry]})
     return groups
 
 
@@ -457,6 +466,7 @@ def group_by_employer(entries):
 story = []
 
 # Heading block: centred identity, then a single pipe-separated contact line.
+email_label = "@" + data["email"].split("@")[0]
 story.extend([
     p(data["name"].upper(), "name"),
     Spacer(1, 1.5),
@@ -465,10 +475,10 @@ story.extend([
     # Icons identify each channel, so the labels stay short and the line stays on one row.
     icon_row(
         [
-            ("mail", link_markup(data["email"], f'mailto:{data["email"]}'), data["email"]),
-            ("arrow-up-right", link_markup("kmanu225.github.io", data["website"]), "kmanu225.github.io"),
-            ("linkedin", link_markup("emmanuel-konan", data["linkedin"]), "emmanuel-konan"),
-            ("github", link_markup("kmanu225", data["github"]), "kmanu225"),
+            ("mail", link_markup(email_label, f'mailto:{data["email"]}'), email_label),
+            ("arrow-up-right", link_markup("Portfolio", data["website"]), "Portfolio"),
+            ("linkedin", link_markup("LinkedIn", data["linkedin"]), "LinkedIn"),
+            ("github", link_markup("GitHub", data["github"]), "GitHub"),
         ],
         "contact",
         separator="|",
@@ -482,7 +492,9 @@ story.append(section_heading("Relevant professional experience", "factory"))
 employers = group_by_employer(data["experience"])
 for group_index, group in enumerate(employers):
     periods = [role["period"] for role in group["roles"]]
-    story.append(date_row(group["organization"], span_period(periods), "org"))
+    organization = (rich(link_markup(group["organization"], group["url"]), "org") if group["url"]
+                    else group["organization"])
+    story.append(date_row(organization, span_period(periods), "org"))
     single_role = len(group["roles"]) == 1
     for role in group["roles"]:
         story.append(Spacer(1, 3))
@@ -533,7 +545,7 @@ def community_entry(item):
 story.append(section_heading("Skills & interests", "user", labelled_rows([
     (
         "Certifications",
-        "; ".join(f'{clean(item["title"])} ({clean(item["year"])})' for item in data["certifications"]),
+        "; ".join(f'{md(item["title"])} ({clean(item["year"])})' for item in data["certifications"]),
     ),
     ("Languages", clean(data["languages"]).rstrip(".")),
     ("Core strengths", "; ".join(clean(item["title"]) for item in data["skills"])),
@@ -590,7 +602,7 @@ doc.build(story, canvasmaker=NumberedCanvas)
 reader = PdfReader(str(pdf_path))
 assert len(reader.pages) <= 2, f"CV must fit two pages, got {len(reader.pages)}"
 text = "\n".join(page.extract_text() or "" for page in reader.pages)
-for expected in ("EMMANUEL KONAN", "PKCS#11", "EAP-PSK-256", "CentraleSup", "Advanced Hardware Security"):
+for expected in ("EMMANUEL KONAN", "PASSI", "EAP-PSK-256", "CentraleSup", "Advanced Hardware Security"):
     assert expected in text, expected
 
 destination = PROJECT_ROOT / "files/emmanuel-konan-cv.pdf"

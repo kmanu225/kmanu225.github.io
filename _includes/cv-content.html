@@ -9,12 +9,12 @@
     <h2 id="experience-heading">Professional experience</h2>
     {% for entry in cv.experience %}<div class="cv-entry">
         <h3>{{ entry.role }}</h3>
-        <p class="meta">{{ entry.organization }} · {{ entry.period }}</p>{% if entry.summary %}<p>{{ entry.summary }}
-        </p>{% endif %}<ul>{% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+        <p class="meta">{% if entry.url %}<a href="{{ entry.url }}">{{ entry.organization }}</a>{% else %}{{ entry.organization }}{% endif %} · {{ entry.period }}</p>{% if entry.summary %}<p>{{ entry.summary }}
+        </p>{% endif %}<ul>{% for bullet in entry.bullets %}<li>{{ bullet | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}</ul>
     </div>{% endfor %}
 </section>
 <section class="cv-section" aria-labelledby="education-heading">
-    <h2 id="education-heading">Education</h2>{% for entry in cv.education %}<div class="cv-entry">
+    <h2 id="education-heading">Academic background</h2>{% for entry in cv.education %}<div class="cv-entry">
         <h3>{{ entry.title }}</h3>
         <p class="meta">{{ entry.organization }} · {{ entry.period }}</p>
         <p>{{ entry.text }}</p>
@@ -22,7 +22,7 @@
 </section>
 <section class="cv-section" aria-labelledby="certifications-heading">
     <h2 id="certifications-heading">Certifications</h2>
-    <ul>{% for entry in cv.certifications %}<li><strong>{{ entry.title }}</strong> · {{ entry.year }}</li>{% endfor %}
+    <ul>{% for entry in cv.certifications %}<li><strong>{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong> · {{ entry.year }}</li>{% endfor %}
     </ul>
 </section>
 <section class="cv-section" aria-labelledby="contribution-heading">
@@ -42,7 +42,7 @@
         </div>{% endfor %}</div>
 </section>
 <section class="cv-section" aria-labelledby="leadership-heading">
-    <h2 id="leadership-heading">Association work</h2>{% for entry in cv.leadership %}<div class="cv-entry">
+    <h2 id="leadership-heading">Community involvement</h2>{% for entry in cv.leadership %}<div class="cv-entry">
         <h3>{% if entry.url %}<a href="{{ entry.url }}">{{ entry.title }} {% include icon.html
             name="arrow-up-right" %}</a>{% else %}{{ entry.title }}{% endif %}</h3>
         <p class="meta">{{ entry.period }}</p>
