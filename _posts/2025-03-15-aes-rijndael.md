@@ -5,11 +5,9 @@ date: 2025-03-15
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/aes-rijndael
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/symmetric/aes-rijndael
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-1/
 ---
 
 AES is a symmetric block cipher. Using it in a system also requires a mode of operation, key management and correct implementation.

@@ -5,13 +5,11 @@ date: 2025-06-22
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-hsm
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/cryptosystem/pki/pki-hsm
 featured: true
 rank: 2
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-6/
 ---
 
 A hardware security module (HSM) stores keys and performs cryptographic operations within a dedicated hardware boundary.

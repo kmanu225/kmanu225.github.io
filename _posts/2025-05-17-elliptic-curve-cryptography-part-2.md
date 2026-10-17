@@ -5,11 +5,9 @@ date: 2025-05-17
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/elliptic-curve-cryptography/part-2-elliptic-curve-over-finite-fields
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/asymmetric/elliptic-curve-cryptography/part-2-elliptic-curve-over-finite-fields
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-3/
 ---
 
 The second part of my elliptic-curve series covers finite fields and operations on curve points. Geometric illustrations over the real numbers help with intuition; cryptographic implementations use discrete arithmetic.

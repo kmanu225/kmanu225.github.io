@@ -5,11 +5,9 @@ date: 2025-04-15
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/elliptic-curve-cryptography/part-1-what-are-elliptic-curves
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/asymmetric/elliptic-curve-cryptography/part-1-what-are-elliptic-curves
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-2/
 ---
 
 This first part of my elliptic-curve series introduces the mathematical objects and geometric intuition. The second part moves to finite fields.

@@ -8,7 +8,7 @@ The public site is English-only. Its primary positioning is applied cryptography
 - `_data/cv.json`: shared source for the HTML CV and downloadable PDF.
 - `_portfolio/`: case studies, ordered by `rank`. Set `portfolio_categories` to one or more IDs from `_data/portfolio_categories.yml`. A project appears in each assigned category; its content and URL remain unique. The OT/IoT audit overview belongs to both security audits and industrial systems.
 - `_data/portfolio_categories.yml`: the four portfolio headings, their order, anchor IDs and icons. The full homepage expertise cards link to these sections using native links with visible keyboard focus.
-- `_posts/`: English article summaries. `guide_url` links to the original external guide without automatically redirecting the reader. Keep existing `redirect_from` aliases.
+- `_posts/`: English article summaries. `guide_url` links to the original external guide without automatically redirecting the reader.
 - `_data/navigation.yml`: primary navigation.
 - `assets/css/professional.css`: the active stylesheet, independent of the legacy theme styles.
 - `_includes/icon.html`: local SVG icons used by navigation, links and expertise cards. Keep icons decorative (`aria-hidden`) and retain visible link labels. Navigation icon names are set in `_data/navigation.yml`.

@@ -5,14 +5,12 @@ title: "Articles"
 kicker: "Blog"
 description: "Notes on system security, industrial systems, cryptography and software engineering, with links to my detailed guides on GitBook."
 lang: en
-redirect_from:
-  - /wordpress/blog-posts/
 ---
+<h2 class="section-label">Software Engineering</h2>
+<div class="article-list">{% for post in site.posts %}{% if post.topic == 'software-engineering' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
+<h2 class="section-label">Cryptography</h2>
+<div class="article-list">{% for post in site.posts %}{% if post.topic == 'cryptography' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
 <h2 class="section-label">System Security</h2>
 <div class="article-list">{% for post in site.posts %}{% if post.topic == 'system-security' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
 <h2 class="section-label">Industrial Systems</h2>
 <div class="article-list">{% for post in site.posts %}{% if post.topic == 'industrial-systems' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
-<h2 class="section-label">Cryptography</h2>
-<div class="article-list">{% for post in site.posts %}{% if post.topic == 'cryptography' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>
-<h2 class="section-label">Software Engineering</h2>
-<div class="article-list">{% for post in site.posts %}{% if post.topic == 'software-engineering' %}{% include article-row.html post=post %}{% endif %}{% endfor %}</div>

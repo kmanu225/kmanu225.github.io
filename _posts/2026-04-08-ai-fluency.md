@@ -6,8 +6,6 @@ topic: software-engineering
 date: 2026-04-08
 tags:
   - ai
-redirect_from:
-  - /blog-post-14/
 ---
 
 I took Anthropic's AI Fluency course. These are my notes on its three modes of AI use and the 4D framework.

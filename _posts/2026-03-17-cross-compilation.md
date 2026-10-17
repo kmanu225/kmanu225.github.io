@@ -5,11 +5,9 @@ date: 2026-03-17
 modified: 2026-08-31
 lang: en
 topic: software-engineering
-guide_url: https://kmanu225.gitbook.io/cs/software-engineering/cross-compilation
+guide_url: https://kmanu225.gitbook.io/cs/software-engineering/compilation/cross-compilation
 tags:
   - software-engineering
-redirect_from:
-  - /blog-post-12/
 ---
 
 I prepared tools for a hardened ARM environment that lacked standard utilities and a local development toolchain. Cross-compilation let me build them on a separate machine.

@@ -5,11 +5,9 @@ date: 2025-06-09
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/pki-foundations
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/cryptosystem/pki/pki-foundations
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-5/
 ---
 
 A public key infrastructure organizes certificate issuance and validation. Certification authorities issue certificates; applications use configured trust anchors to decide which issuers to accept.

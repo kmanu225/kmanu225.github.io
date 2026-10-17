@@ -5,11 +5,9 @@ date: 2026-02-20
 modified: 2026-08-31
 lang: en
 topic: system-security
-guide_url: https://kmanu225.gitbook.io/cs/system-security/ficoba-dgfip
+guide_url: https://kmanu225.gitbook.io/cs/system-security/breaches/ficoba-dgfip
 tags:
   - system-security
-redirect_from:
-  - /blog-post-11/
 ---
 
 The FICOBA data breach raises a simple but uncomfortable question: **if the government cannot adequately protect the sensitive data it collects, who is really protecting citizens?**

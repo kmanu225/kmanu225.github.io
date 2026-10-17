@@ -5,11 +5,9 @@ date: 2026-04-06
 modified: 2026-08-31
 lang: en
 topic: industrial-systems
-guide_url: https://kmanu225.gitbook.io/cs/system-security/cybersecurity-frameworks
+guide_url: https://kmanu225.gitbook.io/cs/system-security/community/cybersecurity-frameworks
 tags:
   - industrial-systems
-redirect_from:
-  - /blog-post-13/
 ---
 
 Cybersecurity frameworks cover different areas: governance, risk analysis, organizational controls and technical safeguards. The guide below provides an overview of these references.

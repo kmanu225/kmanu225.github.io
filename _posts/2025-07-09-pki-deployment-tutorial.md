@@ -5,13 +5,11 @@ date: 2025-07-09
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/pki/private-pki-with-step-ca
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/cryptosystem/pki/private-pki-with-step-ca
 featured: false
 rank: 1
 tags:
   - cryptography
-redirect_from:
-  - /blog-post-7/
 ---
 
 This guide sets up a private certificate authority with Step-CA, using separate Debian-based CA and client environments. It assumes network connectivity and administrative access to both.

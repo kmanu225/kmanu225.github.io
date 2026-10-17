@@ -5,11 +5,9 @@ date: 2025-08-24
 modified: 2026-08-31
 lang: en
 topic: system-security
-guide_url: https://kmanu225.gitbook.io/cs/reference/cheat-sheet/system/linux/security/persistence-mechanisms
+guide_url: https://kmanu225.gitbook.io/cs/cheat-sheet/system/linux/attacking-linux/persistence-mechanisms
 tags:
   - system-security
-redirect_from:
-  - /blog-post-9/
 ---
 
 Persistence mechanisms let an attacker regain execution or access after a compromise. My note was prompted by [John Hammond’s Black Hat USA 2025 material](https://www.youtube.com/watch?v=whhOYRWd_rs) and covers prevention, detection and removal.
