@@ -1,4 +1,20 @@
 (() => {
+  const root = document.documentElement;
+  const toggle = document.querySelector('.theme-toggle');
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const apply = theme => {
+    root.setAttribute('data-theme', theme);
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#0b1110' : '#fbf9f9');
+    if (toggle) toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  };
+  apply(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+  if (toggle) toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();
+(() => {
   const button = document.querySelector('.menu-toggle');
   const nav = document.getElementById('primary-nav');
   if (!button || !nav) return;

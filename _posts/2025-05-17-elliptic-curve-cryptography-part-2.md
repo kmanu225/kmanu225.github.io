@@ -5,7 +5,7 @@ date: 2025-05-17
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/asymmetric/elliptic-curve-cryptography/part-2-elliptic-curve-over-finite-fields
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/asymmetric/ecc/part-2-elliptic-curve-over-finite-fields
 tags:
   - cryptography
 ---

@@ -5,7 +5,7 @@ date: 2025-07-09
 modified: 2026-08-31
 lang: en
 topic: cryptography
-guide_url: https://kmanu225.gitbook.io/cs/cryptography/cryptosystem/pki/private-pki-with-step-ca
+guide_url: https://kmanu225.gitbook.io/cs/cryptography/cryptosystem/pki/step-ca
 featured: false
 rank: 1
 tags:

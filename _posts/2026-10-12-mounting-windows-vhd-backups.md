@@ -4,7 +4,7 @@ description: "Reading the contents of a .vhd backup image without restoring it."
 date: 2026-10-12
 lang: en
 topic: software-engineering
-guide_url: https://kmanu225.gitbook.io/cs/software-engineering/compatibility/mounting-windows-vhd-backups
+guide_url: https://kmanu225.gitbook.io/cs/software-engineering/compatibility/vhd-backups
 tags:
   - software-engineering
   - windows

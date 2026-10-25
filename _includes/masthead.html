@@ -1,9 +1,12 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Emmanuel Konan - Home">
-      <span class="monogram" aria-hidden="true">ek<span>.</span></span><span>Emmanuel Konan</span>
+      <img class="logo-mark logo-light" src="{{ '/images/ek-mark.svg' | relative_url }}" alt="" width="38" height="38"><img class="logo-mark logo-dark" src="{{ '/images/ek-mark-dark.svg' | relative_url }}" alt="" width="38" height="38"><span>Emmanuel Konan</span>
     </a>
-    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu {% include icon.html name="menu" class="menu-icon" %}{% include icon.html name="close" class="close-icon" %}</button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light/dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu {% include icon.html name="menu" class="menu-icon" %}{% include icon.html name="close" class="close-icon" %}</button>
+    </div>
     <nav id="primary-nav" aria-label="Main navigation">
       {% for link in site.data.navigation.main %}
       <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% elsif link.collection and page.collection == link.collection %} aria-current="page"{% elsif page.url == '/' and link.url == '/#expertise' %} aria-current="page"{% endif %}>{% include icon.html name=link.icon %}{{ link.title }}</a>

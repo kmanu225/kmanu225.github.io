@@ -4,7 +4,7 @@ description: "Getting an old Python 2 tool to run on a modern system."
 date: 2026-10-17
 lang: en
 topic: software-engineering
-guide_url: https://kmanu225.gitbook.io/cs/software-engineering/compatibility/running-legacy-python2-programs
+guide_url: https://kmanu225.gitbook.io/cs/software-engineering/compatibility/legacy-python2
 tags:
   - software-engineering
 ---

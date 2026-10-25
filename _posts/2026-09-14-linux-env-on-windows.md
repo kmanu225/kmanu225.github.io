@@ -25,17 +25,17 @@ Many solutions look alike because they all give you a Bash prompt, yet underneat
 
 ## The series
 
-The [full introduction](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment) is on my GitBook, followed by one article per option:
+The [full introduction](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows) is on my GitBook, followed by one article per option:
 
-* [**PowerShell**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/powershell-do-you-actually-need-linux): stay fully native; maybe Linux is not needed at all.
-* [**Git Bash**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/git-bash-a-lightweight-unix-like-shell-on-windows): a lightweight Unix-like shell and common tools.
-* [**MinGW-w64**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/mingw-w64-gnu-tools-on-windows): GNU compilers producing native Windows binaries.
-* [**MSYS2**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/msys2-a-unix-like-development-environment-for-windows): a richer Unix-like development environment.
-* [**Cygwin**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/cygwin-posix-compatibility-on-windows): a POSIX compatibility layer for Unix-oriented applications.
-* [**WSL**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/wsl-a-real-linux-environment-inside-windows): a real Linux environment integrated with Windows.
-* [**Docker and containers**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/docker-and-containers-reproducible-linux-environments-on-windows): isolated, reproducible Linux environments.
-* [**Virtual machines**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/virtual-machines-run-a-complete-linux-system-on-windows): a complete, independent Linux system.
-* [**QEMU**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/qemu-virtualization-and-hardware-emulation-on-windows): virtualization and hardware emulation, including other CPU architectures.
-* [**Remote Linux development**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/unix-linux-on-windows-choosing-the-right-environment/remote-linux-development-use-linux-somewhere-else): use a real Linux machine elsewhere.
+* [**PowerShell**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/powershell): stay fully native; maybe Linux is not needed at all.
+* [**Git Bash**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/git-bash): a lightweight Unix-like shell and common tools.
+* [**MinGW-w64**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/mingw-w64): GNU compilers producing native Windows binaries.
+* [**MSYS2**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/msys2): a richer Unix-like development environment.
+* [**Cygwin**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/cygwin): a POSIX compatibility layer for Unix-oriented applications.
+* [**WSL**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/wsl): a real Linux environment integrated with Windows.
+* [**Docker and containers**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/docker): isolated, reproducible Linux environments.
+* [**Virtual machines**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/virtual-machines): a complete, independent Linux system.
+* [**QEMU**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/qemu): virtualization and hardware emulation, including other CPU architectures.
+* [**Remote Linux development**](https://kmanu225.gitbook.io/cs/software-engineering/compatibility/linux-on-windows/remote): use a real Linux machine elsewhere.
 
 ![Linux on Windows](/images/linux-on-windows.png)
