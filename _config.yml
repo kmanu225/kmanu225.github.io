@@ -22,7 +22,7 @@ repository               : "kmanu225/kmanu225.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.webp"
   name             : "Emmanuel KONAN"
   pronouns         : # "he/his"
   bio              : "Cybersecurity consultant - applied cryptography, PKI/HSM and IT/OT/IoT security."
