@@ -1,25 +1,25 @@
 :root {
   color-scheme:light;
-  --bg:#fbf9f9;
+  --bg:#f9f9fb;
   --surface:#fff;
-  --ink:#231b1b;
-  --muted:#5f5353;
-  --line:#e7dddd;
-  --accent:#8a2323;
-  --accent-dark:#741c1c;
-  --tint:#f8eded;
-  --selection:#f2d4d4;
+  --ink:#1b1b23;
+  --muted:#53535f;
+  --line:#dddde7;
+  --accent:#23238a;
+  --accent-dark:#1c1c74;
+  --tint:#ededf8;
+  --selection:#d4d4f2;
   --on-accent:#fff;
   --header-bg:rgba(255,255,255,.97);
-  --shadow-rgb:40,20,20;
-  --dots:#e2bcbc;
-  --band:#faf1f1;
-  --card-line:#efe2e2;
-  --icon-bg:#f6e4e4;
-  --featured-line:#7a4a4a;
-  --featured-ink:#f6e8e8;
-  --code-bg:#f3ecec;
-  --panel-line:#e8caca;
+  --shadow-rgb:20,20,40;
+  --dots:#bcbce2;
+  --band:#f1f1fa;
+  --card-line:#e2e2ef;
+  --icon-bg:#e4e4f6;
+  --featured-line:#4a4a7a;
+  --featured-ink:#e8e8f6;
+  --code-bg:#ececf3;
+  --panel-line:#cacae8;
   --radius:12px
 }
 :root[data-theme="dark"] {
@@ -29,17 +29,17 @@
   --ink:#ececee;
   --muted:#a6a6ab;
   --line:#2a2a2d;
-  --accent:#e0555f;
-  --accent-dark:#c8323f;
-  --tint:#1d1a1b;
-  --selection:#4a2a2e;
+  --accent:#5f55e0;
+  --accent-dark:#3f32c8;
+  --tint:#1b1a1d;
+  --selection:#2e2a4a;
   --on-accent:#fff;
   --header-bg:rgba(15,15,16,.95);
   --shadow-rgb:0,0,0;
   --dots:#2e2e31;
   --band:#141415;
   --card-line:#262628;
-  --icon-bg:#2a1d1f;
+  --icon-bg:#1f1d2a;
   --featured-line:#3a3a3e;
   --featured-ink:#e6e6e8;
   --code-bg:#1c1c1e;
@@ -1196,22 +1196,22 @@ li {
 @media(max-width:780px){.cv-downloads,.cv-glance{grid-template-columns:1fr}}
 .cv-download-actions{flex-wrap:nowrap}.cv-download-actions>*{white-space:nowrap}
 
-/* Dark theme: footer links and primary buttons white, grenat on hover */
+/* Dark theme: footer links and primary buttons white, indigo on hover */
 :root[data-theme="dark"] .footer-inner nav a,:root[data-theme="dark"] .footer-bottom a {
   color:#ececee;
-  text-decoration-color:#e0555f
+  text-decoration-color:#5f55e0
 }
 :root[data-theme="dark"] .footer-inner nav a .icon {
-  color:#e0555f
+  color:#5f55e0
 }
 :root[data-theme="dark"] .footer-inner nav a:hover,:root[data-theme="dark"] .footer-bottom a:hover {
-  color:#e0555f
+  color:#5f55e0
 }
 :root[data-theme="dark"] .button-primary {
   background:#ececee;
   color:#0f0f10
 }
 :root[data-theme="dark"] .button-primary:hover {
-  background:#c8323f;
+  background:#3f32c8;
   color:#fff
 }
